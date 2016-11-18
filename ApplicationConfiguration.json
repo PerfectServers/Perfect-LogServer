@@ -1,0 +1,9 @@
+{
+	"token": "8f9c9b125f4f13ef26e1f858ef27f75af3e7190d",
+	"postgresdbname": "logserver",
+	"postgreshost": "localhost",
+	"postgresport": 5432,
+	"postgrespwd": "perfect",
+	"postgresuser": "perfect",
+	"httpport": 8181
+}
