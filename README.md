@@ -27,7 +27,17 @@ This package builds with Swift Package Manager and is part of the [Perfect](http
 
 Ensure you have installed and activated the latest Swift 3.0 tool chain.
 
+## First run
+
+The first time the server is run, it will attempt to create the tables and data structure, and a default user account.
+
+This account's username is "admin" and the password is "perfect".
+
+> It is **strongly recommended** that you create a new user for yourself, then delete this "admin" user account.
+
+
 ## Installation and setup
+
 
 Please ensure you have installed Swift 3.0.2 or later before building this project.
 
