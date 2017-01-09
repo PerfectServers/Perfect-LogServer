@@ -5,12 +5,12 @@
 	<h3 class="mt">{{action}} Token</h3>
 
 	<form action="?" method="POST" id="appform">
-		<input type="hidden" name="token" id="token" value="">
+<input type="hidden" name="token" id="token" value="{{token}}">
 
 		<div class="row">
 			<label class="mt hmb">Name:</label>
 			<div class="col thirteen first">
-				<input type="text" name="name" id="createName" class="col six first hpl" required>
+			<input type="text" name="name" id="createName" class="col six first hpl" required value="{{name}}">
 			</div>
 		</div>
 		<button type="submit" class="dmt">Save</button>

@@ -121,7 +121,7 @@ extension WebHandlers {
 		let app = AppToken()
 		var msg = ""
 
-		if let id = request.urlVariables["token"] {
+		if let id = request.urlVariables["id"] {
 			var findCriteria = [(String,Any)]()
 			findCriteria.append(("token",id))
 			try? app.find(findCriteria)
@@ -134,9 +134,11 @@ extension WebHandlers {
 
 		if let name = request.param(name: "name"), !name.isEmpty {
 			app.name = name
-
-			let _ = app.newToken(account: contextAccountID, tokenName: name)
-
+			if app.id > 0 {
+				try? app.save()
+			} else {
+				let _ = app.newToken(account: contextAccountID, tokenName: name)
+			}
 
 		} else {
 			msg = "Please enter the token name."

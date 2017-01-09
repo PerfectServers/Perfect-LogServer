@@ -214,7 +214,7 @@ extension WebHandlers {
 		let app = Application()
 		var msg = ""
 
-		if let id = request.urlVariables["appuuid"] {
+		if let id = request.urlVariables["id"] {
 			var findCriteria = [(String,Any)]()
 			findCriteria.append(("appuuid",id))
 			try? app.find(findCriteria)
@@ -228,7 +228,11 @@ extension WebHandlers {
 		if let name = request.param(name: "name"), !name.isEmpty {
 			app.name = name
 
-			let _ = app.newApplication(account: contextAccountID, appName: name)
+			if app.id > 0 {
+				try? app.save()
+			} else {
+				let _ = app.newApplication(account: contextAccountID, appName: name)
+			}
 
 
 		} else {
