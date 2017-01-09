@@ -67,3 +67,6 @@ Packages/
 .packages_lin/
 *.xcodeproj
 buildlinux
+StORM*
+webLog*
+Package.swift.orig
