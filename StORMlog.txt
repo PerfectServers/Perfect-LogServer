@@ -1,0 +1,447 @@
+[INFO] [2d270c3e-5d20-4424-9d9b-87397f1dd4e8] [2016-12-30 17:58:11 GMT-05:00] Running setup: users
+[INFO] [9df78d25-16bb-4398-92cc-72d393a793e3] [2016-12-30 17:58:11 GMT-05:00] Running setup: tokens
+[INFO] [68547c0b-49cb-44ad-89e5-f6be29cf2e4b] [2017-01-05 11:10:45 GMT-05:00] Running setup: users
+[INFO] [3e987662-a127-4b7c-acdf-95dfdff8b9a2] [2017-01-05 11:10:45 GMT-05:00] Running setup: tokens
+[ERROR] [05b18fab-358e-4675-8ead-14df2e0aa29c] [2017-01-05 11:14:36 GMT-05:00] Error msg: error("ERROR:  column \"uniqueid\" does not exist\nLINE 1: SELECT \"uniqueid\",\"username\",\"password\",\"facebookid\",\"google...\n               ^\nHINT:  Perhaps you meant to reference the column \"users.uniqueID\".")
+[ERROR] [bdbef57d-a8dc-4860-89a6-5e93e1016c05] [2017-01-05 11:22:08 GMT-05:00] Error msg: error("ERROR:  column \"uniqueid\" does not exist\nLINE 1: SELECT \"uniqueid\",\"username\",\"password\",\"facebookid\",\"google...\n               ^\nHINT:  Perhaps you meant to reference the column \"users.uniqueID\".")
+[ERROR] [cb8ffe15-43ee-4228-aad0-0eae6e7a0959] [2017-01-05 11:22:15 GMT-05:00] Error msg: error("ERROR:  column \"uniqueid\" does not exist\nLINE 1: SELECT \"uniqueid\",\"username\",\"password\",\"facebookid\",\"google...\n               ^\nHINT:  Perhaps you meant to reference the column \"users.uniqueID\".")
+[ERROR] [cc462a3c-c215-4760-bd2b-d5099b1a3629] [2017-01-05 11:22:56 GMT-05:00] Error msg: error("ERROR:  column \"uniqueid\" does not exist\nLINE 1: SELECT \"uniqueid\",\"username\",\"password\",\"facebookid\",\"google...\n               ^\nHINT:  Perhaps you meant to reference the column \"users.uniqueID\".")
+[INFO] [b1c78b41-de95-421e-a773-1c1e9a1cc41a] [2017-01-05 11:24:00 GMT-05:00] Running setup: users
+[INFO] [40b696a2-3b8b-4068-82a8-f5b5df44b5c8] [2017-01-05 11:24:00 GMT-05:00] Running setup: tokens
+[INFO] [05003a32-2512-49d1-a415-c406ae86dafd] [2017-01-05 14:16:00 GMT-05:00] Running setup: users
+[INFO] [ee0f9d8c-f47b-4882-b1c7-04402848f335] [2017-01-05 14:16:00 GMT-05:00] Running setup: tokens
+[INFO] [060708ca-b01e-4f1b-808e-c61ad95b3b67] [2017-01-05 14:20:22 GMT-05:00] Running setup: users
+[INFO] [4c1521f7-605c-4dd6-8e6a-dc82fd99972f] [2017-01-05 14:20:22 GMT-05:00] Running setup: tokens
+[INFO] [3ff42c87-e603-4aac-900d-49aa1663528f] [2017-01-05 14:20:22 GMT-05:00] Running setup: logs
+[INFO] [a6db390c-0316-4b92-b52a-43d9580808f8] [2017-01-05 14:20:22 GMT-05:00] Running setup: apptokens
+[INFO] [b0666030-d8ff-4cb8-9d49-191df3fc6eb5] [2017-01-05 14:25:27 GMT-05:00] Running setup: users
+[INFO] [a847e9a8-dc83-482f-afd6-0b4694134a7f] [2017-01-05 14:25:27 GMT-05:00] Running setup: tokens
+[INFO] [437ff87c-a754-4c5e-9bc5-a189e3c07e04] [2017-01-05 14:25:27 GMT-05:00] Running setup: logs
+[INFO] [1a13a97f-4a96-47de-9ac8-66cb050dc486] [2017-01-05 14:25:27 GMT-05:00] Running setup: applications
+[INFO] [eccb3f15-7a45-49cd-86d7-40382adf8ac3] [2017-01-05 14:38:58 GMT-05:00] Running setup: users
+[INFO] [fb4f5ad7-62cf-4c01-82c4-c06f448feff5] [2017-01-05 14:38:58 GMT-05:00] Running setup: tokens
+[INFO] [7848b1cc-8e73-497d-9b52-83136e5c2e48] [2017-01-05 14:38:58 GMT-05:00] Running setup: logs
+[INFO] [50d4d66c-b80e-4e90-8771-c77361442c9f] [2017-01-05 14:38:58 GMT-05:00] Running setup: applications
+[INFO] [f3a4ea48-6c6e-4fef-8a7f-9b3542ea7ec9] [2017-01-05 14:50:10 GMT-05:00] Running setup: users
+[INFO] [d5544b42-2701-49be-8026-03485f620b5d] [2017-01-05 14:50:10 GMT-05:00] Running setup: tokens
+[INFO] [d637a05d-82ce-4d3e-8ef8-ba72494dc32b] [2017-01-05 14:50:10 GMT-05:00] Running setup: logs
+[INFO] [8cd69f74-1411-471e-b08e-92b9852e738a] [2017-01-05 14:50:10 GMT-05:00] Running setup: applications
+[INFO] [36c066e8-f576-4083-8eef-e8035fa15998] [2017-01-05 15:12:42 GMT-05:00] Running setup: users
+[INFO] [9b6ea612-deb1-4c5c-8237-ca32125dc789] [2017-01-05 15:12:42 GMT-05:00] Running setup: tokens
+[INFO] [06365f2b-54f4-4e49-ab94-dedd5656478e] [2017-01-05 15:12:42 GMT-05:00] Running setup: logs
+[INFO] [98b62b49-3036-4d81-bff5-9f5ae560d25b] [2017-01-05 15:12:42 GMT-05:00] Running setup: applications
+[INFO] [fc4045b8-2a35-40ac-b96b-b266c61140ce] [2017-01-05 15:30:03 GMT-05:00] Running setup: users
+[INFO] [473bae70-f703-4957-8c40-ff85799e8788] [2017-01-05 15:30:03 GMT-05:00] Running setup: tokens
+[INFO] [a8c5fe9f-dfba-4036-b425-6c79ca4635df] [2017-01-05 15:30:03 GMT-05:00] Running setup: logs
+[INFO] [385679fc-9364-4257-9cfe-556c7fe68749] [2017-01-05 15:30:03 GMT-05:00] Running setup: applications
+[INFO] [20f963ea-df20-4c84-8264-481a88508702] [2017-01-05 15:51:21 GMT-05:00] Running setup: users
+[INFO] [c2af3fbc-2e09-4da6-9079-70a021795e41] [2017-01-05 15:51:21 GMT-05:00] Running setup: tokens
+[INFO] [6b15ebcb-2f49-456e-b551-59c45b3e2e77] [2017-01-05 15:51:21 GMT-05:00] Running setup: logs
+[INFO] [21e0e03b-8841-4cf1-a4d1-e629c8948b2c] [2017-01-05 15:51:21 GMT-05:00] Running setup: applications
+[INFO] [9bc92b2c-5fb6-4a39-91ac-a32b5b0bda26] [2017-01-05 15:53:35 GMT-05:00] Running setup: users
+[INFO] [df3d029a-171a-4a7e-b823-c4dc0c951921] [2017-01-05 15:53:35 GMT-05:00] Running setup: tokens
+[INFO] [6d66b169-60dd-43a8-8c88-2c3ae74784af] [2017-01-05 15:53:35 GMT-05:00] Running setup: logs
+[INFO] [b21c29b8-b6dc-480d-abf3-b06937439f92] [2017-01-05 15:53:35 GMT-05:00] Running setup: applications
+[INFO] [554ab500-fe4e-4ebd-a382-bc502dee4836] [2017-01-05 15:54:04 GMT-05:00] Running setup: users
+[INFO] [981dd999-96b8-4fbc-b197-421ee303ceb8] [2017-01-05 15:54:04 GMT-05:00] Running setup: tokens
+[INFO] [f3a6cf29-b04e-450c-b08a-99723ff8eff1] [2017-01-05 15:54:04 GMT-05:00] Running setup: logs
+[INFO] [150e31b8-c803-4616-9ddc-2d89987ab9af] [2017-01-05 15:54:04 GMT-05:00] Running setup: applications
+[ERROR] [849bd519-3dad-4892-81e6-908d39b90254] [2017-01-05 15:59:59 GMT-05:00] Error msg: error("ERROR:  column \"accountid\" does not exist\nLINE 1: SELECT COUNT(*) AS counter FROM logs  WHERE accountid = $1 A...\n                                                    ^")
+[ERROR] [a4d44ffc-b1a4-409c-b721-b6f4c64914b2] [2017-01-05 15:59:59 GMT-05:00] Error: error("error(\"ERROR:  column \\\"accountid\\\" does not exist\\nLINE 1: SELECT COUNT(*) AS counter FROM logs  WHERE accountid = $1 A...\\n                                                    ^\")")
+[INFO] [801a256a-bcca-400d-a361-91a938494f58] [2017-01-05 16:01:29 GMT-05:00] Running setup: users
+[INFO] [b60cf8e5-3b42-4f50-92bc-c442039cba28] [2017-01-05 16:01:29 GMT-05:00] Running setup: tokens
+[INFO] [bd2bc1ba-25f8-4d42-af3b-d1f2d0c033d6] [2017-01-05 16:01:29 GMT-05:00] Running setup: logs
+[INFO] [3e03daed-8b7e-4d49-9138-a9a33b09884b] [2017-01-05 16:01:29 GMT-05:00] Running setup: applications
+[INFO] [7d0e5051-51ff-40c7-85fe-bc7a269961c3] [2017-01-05 16:02:22 GMT-05:00] Running setup: users
+[INFO] [fe7237a9-2f6d-4c8a-ac49-535cf4e5bfc3] [2017-01-05 16:02:22 GMT-05:00] Running setup: tokens
+[INFO] [1c431df8-20f2-41b2-b58f-467771fbfc87] [2017-01-05 16:02:22 GMT-05:00] Running setup: logs
+[INFO] [23d4ccb5-18ed-4fdc-9afe-f8db6b967663] [2017-01-05 16:02:22 GMT-05:00] Running setup: applications
+[INFO] [28f23c96-dc8c-4ed8-95fd-fb41cf69b36d] [2017-01-05 16:03:32 GMT-05:00] Running setup: users
+[INFO] [8a5afbf7-a026-4928-89e3-698db231d8b0] [2017-01-05 16:03:32 GMT-05:00] Running setup: tokens
+[INFO] [b506ab75-c712-4fc7-b46e-30fdbaeaf852] [2017-01-05 16:03:32 GMT-05:00] Running setup: logs
+[INFO] [10ec3016-629e-4a24-ac04-7fc2f3e734ea] [2017-01-05 16:03:32 GMT-05:00] Running setup: applications
+[INFO] [3ca82a99-0a01-430f-bec6-174c54ae304d] [2017-01-05 16:05:23 GMT-05:00] Running setup: users
+[INFO] [377f056e-c4b1-4c46-a696-31bd68b63c3b] [2017-01-05 16:05:23 GMT-05:00] Running setup: tokens
+[INFO] [dcf14ddc-b3a2-4328-a3d7-397702d643c5] [2017-01-05 16:05:23 GMT-05:00] Running setup: logs
+[INFO] [53234333-83f5-4b96-a972-677abf1016fe] [2017-01-05 16:05:23 GMT-05:00] Running setup: applications
+[INFO] [00d4d5b0-a95c-4497-a870-e2acef547dab] [2017-01-05 16:06:41 GMT-05:00] Running setup: users
+[INFO] [9135f3f6-71a2-4de1-8a58-be38c43837c8] [2017-01-05 16:06:41 GMT-05:00] Running setup: tokens
+[INFO] [8863a9a8-16ac-481e-bd26-5398bb78392f] [2017-01-05 16:06:41 GMT-05:00] Running setup: logs
+[INFO] [2e275f96-2c2c-4a5d-b496-3020609cdd64] [2017-01-05 16:06:41 GMT-05:00] Running setup: applications
+[INFO] [929ca0aa-1ec7-488c-b2a2-a26da6e28cfb] [2017-01-05 16:09:26 GMT-05:00] Running setup: users
+[INFO] [134d4b77-910f-4b36-989f-52b3ab15ef12] [2017-01-05 16:09:26 GMT-05:00] Running setup: tokens
+[INFO] [88d2b684-5308-47a8-af36-7524bf283ebb] [2017-01-05 16:09:26 GMT-05:00] Running setup: logs
+[INFO] [7a0cd8b6-3a1c-4783-9a74-b64b7690bb5d] [2017-01-05 16:09:26 GMT-05:00] Running setup: applications
+[INFO] [5870ed53-2a71-4c9b-b9da-63c2ec020f39] [2017-01-05 16:09:49 GMT-05:00] Running setup: users
+[INFO] [4be7795d-aa9e-412f-8dcf-aa0af8c3edd4] [2017-01-05 16:09:49 GMT-05:00] Running setup: tokens
+[INFO] [0142adb9-2c25-452e-adee-49a890269b51] [2017-01-05 16:09:49 GMT-05:00] Running setup: logs
+[INFO] [8b52f370-7acc-4865-abbd-063b578c3f9e] [2017-01-05 16:09:49 GMT-05:00] Running setup: applications
+[INFO] [580892e9-af80-4da4-89bf-673c3c8e2ec2] [2017-01-05 16:10:27 GMT-05:00] Running setup: users
+[INFO] [341fb861-3241-423d-9f2b-15a238584339] [2017-01-05 16:10:27 GMT-05:00] Running setup: tokens
+[INFO] [4223bd63-d075-46d6-9780-11468e12067f] [2017-01-05 16:10:27 GMT-05:00] Running setup: logs
+[INFO] [49cba65e-14cc-4ebe-b3aa-59a1c66c2820] [2017-01-05 16:10:27 GMT-05:00] Running setup: applications
+[INFO] [6197d9cb-5e40-433a-b055-de73d3d6fb46] [2017-01-05 16:12:34 GMT-05:00] Running setup: users
+[INFO] [4dd18a8a-1b52-4280-8094-e3a9dd4e39eb] [2017-01-05 16:12:34 GMT-05:00] Running setup: tokens
+[INFO] [5cf37fe8-1a78-4666-a3a0-907896ba9297] [2017-01-05 16:12:34 GMT-05:00] Running setup: logs
+[INFO] [595bb745-57d7-4e32-b6c0-87c8a41c0c2e] [2017-01-05 16:12:34 GMT-05:00] Running setup: applications
+[INFO] [22701225-ed94-4452-99f0-4cf379fb6322] [2017-01-05 16:12:37 GMT-05:00] Postgres conn: postgresql://perfect:perfect@localhost:5432/logserver
+[INFO] [93d516cc-7829-443b-b18c-b5bccce6000e] [2017-01-05 16:12:37 GMT-05:00] Postgres conn state: ok
+[DEBUG] [e4b598d6-b100-47d4-a9eb-aefc71fc48c4] [2017-01-05 16:12:37 GMT-05:00] StORM Debug: SELECT COUNT(*) AS counter FROM tokens  WHERE "token" = $1 : gJdPvR1dksra_VqBsJfe7g
+[INFO] [10bd8a1e-c131-4aaa-bd20-1c27149add6e] [2017-01-05 16:12:37 GMT-05:00] Error msg: 
+[INFO] [5d2c7f00-3cb4-4f8a-81c0-7438671a7584] [2017-01-05 16:12:37 GMT-05:00] Postgres conn: postgresql://perfect:perfect@localhost:5432/logserver
+[INFO] [8a3163cf-3155-4c6f-9fa2-7e52d693cccb] [2017-01-05 16:12:37 GMT-05:00] Postgres conn state: ok
+[DEBUG] [8ab340ab-ac85-4296-94ec-a308e0df7898] [2017-01-05 16:12:37 GMT-05:00] StORM Debug: SELECT "token","userid","created","updated","idle" FROM tokens  WHERE "token" = $1  LIMIT 50 : gJdPvR1dksra_VqBsJfe7g
+[INFO] [89e71aae-9455-4761-a5a5-dd873f252d01] [2017-01-05 16:12:37 GMT-05:00] Error msg: 
+[INFO] [a73d6b52-e2ff-4fa8-8589-06c9681d19a2] [2017-01-05 16:12:37 GMT-05:00] Postgres conn: postgresql://perfect:perfect@localhost:5432/logserver
+[INFO] [ea21fad3-bcb7-4044-ab3c-17048fac5750] [2017-01-05 16:12:37 GMT-05:00] Postgres conn state: ok
+[DEBUG] [e774eaeb-ffb8-4e0e-8d72-556b4ca15991] [2017-01-05 16:12:37 GMT-05:00] StORM Debug: UPDATE tokens SET "userid" = $1, "created" = $2, "updated" = $3, "idle" = $4 WHERE "token" = $5 : kOnvOk3JE8BXtQn1B4LqCA, 505342462, 505343557, 86400, gJdPvR1dksra_VqBsJfe7g
+[INFO] [944e4c36-f92d-47a9-9909-d0ea0ca6614f] [2017-01-05 16:12:37 GMT-05:00] Error msg: 
+[INFO] [f885c3a8-4c42-409c-9216-f7788dbedd68] [2017-01-05 16:12:37 GMT-05:00] Postgres conn: postgresql://perfect:perfect@localhost:5432/logserver
+[INFO] [3221e921-45e3-44b2-836f-bf49ce5dac7c] [2017-01-05 16:12:37 GMT-05:00] Postgres conn state: ok
+[DEBUG] [82832998-9812-412d-8b34-00cb60341b58] [2017-01-05 16:12:37 GMT-05:00] StORM Debug: SELECT COUNT(*) AS counter FROM users  WHERE "uniqueid" = $1 : kOnvOk3JE8BXtQn1B4LqCA
+[INFO] [7f14a7fa-91aa-4b8f-9d1b-2d90eceeca4e] [2017-01-05 16:12:37 GMT-05:00] Error msg: 
+[INFO] [c58c9074-a339-464d-93f2-2965950e0a30] [2017-01-05 16:12:37 GMT-05:00] Postgres conn: postgresql://perfect:perfect@localhost:5432/logserver
+[INFO] [3b9fdead-5047-4ca3-8088-3a4c26e8d5fe] [2017-01-05 16:12:37 GMT-05:00] Postgres conn state: ok
+[DEBUG] [2d7aa784-f794-439e-a933-612be7db824d] [2017-01-05 16:12:37 GMT-05:00] StORM Debug: SELECT "uniqueid","username","password","facebookid","googleid","firstname","lastname","email" FROM users  WHERE "uniqueid" = $1  LIMIT 50 : kOnvOk3JE8BXtQn1B4LqCA
+[INFO] [f743ee10-fb11-43df-aef2-f4e6e415c07a] [2017-01-05 16:12:37 GMT-05:00] Error msg: 
+[INFO] [66562f16-0437-40a9-b38f-e4da6f9b2c1d] [2017-01-05 16:12:37 GMT-05:00] Postgres conn: postgresql://perfect:perfect@localhost:5432/logserver
+[INFO] [edf3850c-8c90-45f9-81ed-1a074835ec71] [2017-01-05 16:12:37 GMT-05:00] Postgres conn state: ok
+[DEBUG] [e1659137-347b-482a-bbad-a5b0cd31cd3c] [2017-01-05 16:12:37 GMT-05:00] StORM Debug: SELECT COUNT(*) AS counter FROM logs  WHERE token = $1 : 71bb6d1b-99a4-4183-a064-d4a53f551bda
+[INFO] [8fdf6f61-91e6-43ff-bedb-f02686380b5f] [2017-01-05 16:12:37 GMT-05:00] Error msg: 
+[INFO] [15c58e57-beac-41b5-991f-2d7f2ddb1d0a] [2017-01-05 16:12:37 GMT-05:00] Postgres conn: postgresql://perfect:perfect@localhost:5432/logserver
+[INFO] [2d25729d-fa75-4b63-90c5-b0a9b9a93a04] [2017-01-05 16:12:37 GMT-05:00] Postgres conn state: ok
+[DEBUG] [49511590-5a43-4105-a1f7-9b29b252faae] [2017-01-05 16:12:37 GMT-05:00] StORM Debug: SELECT "id","token","appuuid","loglevel","detail","dategenerated" FROM logs  WHERE token = $1  ORDER BY id LIMIT 50 : 71bb6d1b-99a4-4183-a064-d4a53f551bda
+[INFO] [84c36b2a-8f71-4f19-8bd8-e8e3042a644b] [2017-01-05 16:12:37 GMT-05:00] Error msg: 
+[INFO] [2c008ac5-16f4-4800-8bff-e7f6664a3c64] [2017-01-05 16:13:42 GMT-05:00] Running setup: users
+[INFO] [43cfb5ca-8345-4ac0-880f-59ea902cd46c] [2017-01-05 16:13:42 GMT-05:00] Running setup: tokens
+[INFO] [e00270c7-15d5-4b27-a751-b45206ed92fb] [2017-01-05 16:13:42 GMT-05:00] Running setup: logs
+[INFO] [9cc94eca-c19c-4923-9b8b-22a63e225a9b] [2017-01-05 16:13:42 GMT-05:00] Running setup: applications
+[INFO] [a44c40e9-a16b-461d-b248-2e7badffc52e] [2017-01-05 16:13:57 GMT-05:00] Running setup: users
+[INFO] [5187b663-d039-4187-aa33-b0e8abfb8160] [2017-01-05 16:13:57 GMT-05:00] Running setup: tokens
+[INFO] [ab0074f3-e2c8-4655-a056-869be76120d9] [2017-01-05 16:13:57 GMT-05:00] Running setup: logs
+[INFO] [9cc1ed61-5049-4651-a26e-2f96c0e004bb] [2017-01-05 16:13:57 GMT-05:00] Running setup: applications
+[INFO] [c2077614-5f09-4417-8611-36b853add637] [2017-01-05 16:16:58 GMT-05:00] Running setup: users
+[INFO] [e79aa11e-5012-408d-ba41-295874a4ccff] [2017-01-05 16:16:58 GMT-05:00] Running setup: tokens
+[INFO] [1cd9fa22-1f17-44b9-adba-01747e0fe17a] [2017-01-05 16:16:58 GMT-05:00] Running setup: logs
+[INFO] [7200be66-6768-4802-b4b0-d6c3f15e2c43] [2017-01-05 16:16:58 GMT-05:00] Running setup: applications
+[INFO] [5e939742-afae-4c0b-be44-babeba5e1cc3] [2017-01-05 16:18:13 GMT-05:00] Running setup: users
+[INFO] [89bc6f05-3151-469f-a4ac-cc74ad6cb52b] [2017-01-05 16:18:13 GMT-05:00] Running setup: tokens
+[INFO] [5aa53506-1323-4ae3-a4c7-019392fddf4f] [2017-01-05 16:18:13 GMT-05:00] Running setup: logs
+[INFO] [5342ad7e-59de-4e8d-a744-457e807c5a0e] [2017-01-05 16:18:13 GMT-05:00] Running setup: applications
+[INFO] [b0fe919c-643e-4f02-a9f2-fe2ce3012bad] [2017-01-05 16:18:42 GMT-05:00] Running setup: users
+[INFO] [17ceb421-7dde-4d7b-94ec-67faac3837fd] [2017-01-05 16:18:42 GMT-05:00] Running setup: tokens
+[INFO] [650ade02-7852-4585-863b-7e732f651ef3] [2017-01-05 16:18:42 GMT-05:00] Running setup: logs
+[INFO] [d41e89da-ddea-4e63-a4e8-820dbbea694b] [2017-01-05 16:18:42 GMT-05:00] Running setup: applications
+[INFO] [a3dabc8b-54d0-49b1-bf66-d2284862d1c1] [2017-01-05 16:19:48 GMT-05:00] Running setup: users
+[INFO] [59ee4a18-2f1b-4e45-b5a8-ade8034aae72] [2017-01-05 16:19:48 GMT-05:00] Running setup: tokens
+[INFO] [a28bb160-e2c8-45c6-99c9-b45bb174d0a9] [2017-01-05 16:19:48 GMT-05:00] Running setup: logs
+[INFO] [2261335d-7f58-4c1d-ba2e-0b3b02d3091e] [2017-01-05 16:19:48 GMT-05:00] Running setup: applications
+[INFO] [15e40f06-d0c8-42c4-b14e-6e9b1a6b163a] [2017-01-05 16:20:03 GMT-05:00] Running setup: users
+[INFO] [99715a65-04af-4969-bd45-4df1efedad14] [2017-01-05 16:20:03 GMT-05:00] Running setup: tokens
+[INFO] [37d2a9c0-d84b-4f24-9abd-eb1b03cc8463] [2017-01-05 16:20:03 GMT-05:00] Running setup: logs
+[INFO] [57d17913-85fa-4f3c-a06e-046194d3c0fb] [2017-01-05 16:20:03 GMT-05:00] Running setup: applications
+[INFO] [644866e5-9082-4a4d-b63d-4e26aea69d52] [2017-01-05 16:22:05 GMT-05:00] Running setup: users
+[INFO] [7f573c7d-cd37-4f77-873f-2b696c3bd1ed] [2017-01-05 16:22:05 GMT-05:00] Running setup: tokens
+[INFO] [3d5e6d40-a6a9-4d64-97b5-5ca6a904eca7] [2017-01-05 16:22:05 GMT-05:00] Running setup: logs
+[INFO] [0c78c556-7f6b-4c74-8b92-a568d28ab631] [2017-01-05 16:22:05 GMT-05:00] Running setup: applications
+[INFO] [73874eb1-8de4-4cf5-86ff-deaf7881f281] [2017-01-05 16:23:00 GMT-05:00] Running setup: users
+[INFO] [cb8f52f5-ea8a-4b99-9063-13c82cc25ca1] [2017-01-05 16:23:00 GMT-05:00] Running setup: tokens
+[INFO] [627ff886-3ac7-4ddc-9506-4f8ddc21aec3] [2017-01-05 16:23:00 GMT-05:00] Running setup: logs
+[INFO] [e3ff1a03-a00b-4700-a58d-facc181e21b1] [2017-01-05 16:23:00 GMT-05:00] Running setup: applications
+[INFO] [1fc4efd7-ee88-400d-9f06-79e94404483c] [2017-01-05 16:23:16 GMT-05:00] Running setup: users
+[INFO] [4d8e0789-3f34-4ff4-af88-6f3f69c3d02b] [2017-01-05 16:23:16 GMT-05:00] Running setup: tokens
+[INFO] [fec3a8cb-c2d3-45ee-b237-f86e765e72ce] [2017-01-05 16:23:16 GMT-05:00] Running setup: logs
+[INFO] [25b9753e-439d-40ee-a77c-76b5fad7902d] [2017-01-05 16:23:16 GMT-05:00] Running setup: applications
+[INFO] [73d7f824-489b-4803-afef-823a69c51475] [2017-01-05 16:25:48 GMT-05:00] Running setup: users
+[INFO] [57220b1b-7d12-4980-b1f0-56e78455063c] [2017-01-05 16:25:48 GMT-05:00] Running setup: tokens
+[INFO] [c264fe05-f7a7-428a-89c7-01ba2b0dc19f] [2017-01-05 16:25:48 GMT-05:00] Running setup: logs
+[INFO] [c70dfbd6-af08-4e22-8838-e7c71b729c66] [2017-01-05 16:25:48 GMT-05:00] Running setup: applications
+[INFO] [49de4787-a157-413d-82aa-50b84d3d1fa0] [2017-01-05 16:26:27 GMT-05:00] Running setup: users
+[INFO] [290e7600-7102-4538-afaa-69ebca77fc78] [2017-01-05 16:26:27 GMT-05:00] Running setup: tokens
+[INFO] [55d635af-d20e-4524-acd9-5a2ea2a695fd] [2017-01-05 16:26:27 GMT-05:00] Running setup: logs
+[INFO] [9f3c0e95-696f-45cf-b67b-3779465f258e] [2017-01-05 16:26:27 GMT-05:00] Running setup: applications
+[INFO] [9bd97bc2-804f-4bdf-a4b2-d8937cee37d6] [2017-01-05 16:26:47 GMT-05:00] Running setup: users
+[INFO] [24eb556e-8a9c-4759-b09e-7e6dbe5630a5] [2017-01-05 16:26:47 GMT-05:00] Running setup: tokens
+[INFO] [59829910-0edb-4a5b-a43c-947612ed0b9a] [2017-01-05 16:26:47 GMT-05:00] Running setup: logs
+[INFO] [3f440e6c-eff4-4193-91a3-44a46fe80d7d] [2017-01-05 16:26:47 GMT-05:00] Running setup: applications
+[INFO] [d9fb8588-96a0-48b1-b116-eb3ab6eb5ef7] [2017-01-05 16:27:53 GMT-05:00] Running setup: users
+[INFO] [eb0405f9-19ea-4026-b285-3ba26b54e56a] [2017-01-05 16:27:53 GMT-05:00] Running setup: tokens
+[INFO] [3b4015e5-e0eb-465e-b2b0-73cb5df2b2b3] [2017-01-05 16:27:53 GMT-05:00] Running setup: logs
+[INFO] [fbd8ef95-0d34-4e68-abe3-66c7c2ce4944] [2017-01-05 16:27:53 GMT-05:00] Running setup: applications
+[INFO] [a10ba752-b371-41c5-a8c8-84e083873856] [2017-01-05 16:34:30 GMT-05:00] Running setup: users
+[INFO] [ddf37835-0054-492c-a323-16d55fb822a8] [2017-01-05 16:34:30 GMT-05:00] Running setup: tokens
+[INFO] [dbfa7878-ef66-416f-8829-afc2be990584] [2017-01-05 16:34:30 GMT-05:00] Running setup: logs
+[INFO] [684b37b1-2b22-4cd1-bee4-3deaa4203761] [2017-01-05 16:34:30 GMT-05:00] Running setup: applications
+[ERROR] [b9a39818-45e0-45dc-b882-8c43a3900656] [2017-01-05 16:35:44 GMT-05:00] Error: error("ERROR:  invalid input syntax for uuid: \"sss\"")
+[ERROR] [57ccffb2-dc99-4ee2-94f9-9bb11ad76054] [2017-01-05 16:35:44 GMT-05:00] Error: error("ERROR:  invalid input syntax for uuid: \"sss\"")
+[ERROR] [ea7db3f4-8183-499d-bfb4-8dfba06e6c7f] [2017-01-05 16:35:44 GMT-05:00] Error: error("error(\"ERROR:  invalid input syntax for uuid: \\\"sss\\\"\")")
+[ERROR] [cd1bb966-f6a8-4eac-b074-a6fe0b998624] [2017-01-05 16:35:44 GMT-05:00] Error: error("error(\"error(\\\"ERROR:  invalid input syntax for uuid: \\\\\\\"sss\\\\\\\"\\\")\")")
+[INFO] [d3909db1-9562-4b7d-bc11-a24dcec3ae95] [2017-01-05 16:56:47 GMT-05:00] Running setup: users
+[INFO] [be3d9819-823c-49a5-9b95-4b0a895d6f76] [2017-01-05 16:56:47 GMT-05:00] Running setup: tokens
+[INFO] [56243aa9-4265-4c53-b858-170fd9f4706f] [2017-01-05 16:56:47 GMT-05:00] Running setup: logs
+[INFO] [124c2115-9fee-4a3d-8181-91aa22a23663] [2017-01-05 16:56:47 GMT-05:00] Running setup: applications
+[INFO] [6a14fab3-f4fe-4d29-b27c-abfb5ba232b5] [2017-01-05 16:58:38 GMT-05:00] Running setup: users
+[INFO] [83d86689-65df-4fa3-98f5-94f3e7cb9c5e] [2017-01-05 16:58:38 GMT-05:00] Running setup: tokens
+[INFO] [59acde83-8fc9-4f6c-9799-197138cb68b8] [2017-01-05 16:58:38 GMT-05:00] Running setup: logs
+[INFO] [94b13354-f3f7-47e7-a38c-c9c80c4030b6] [2017-01-05 16:58:38 GMT-05:00] Running setup: applications
+[INFO] [38606142-6976-469a-ab72-1407578136fc] [2017-01-05 17:04:30 GMT-05:00] Running setup: users
+[INFO] [665a5601-a9c6-4835-97be-12463267227e] [2017-01-05 17:04:30 GMT-05:00] Running setup: tokens
+[INFO] [90deee6d-ffb9-4b4a-ae0e-0c39b5c9b4aa] [2017-01-05 17:04:30 GMT-05:00] Running setup: logs
+[INFO] [9c034625-17b1-456d-a232-01c7c0520314] [2017-01-05 17:04:30 GMT-05:00] Running setup: applications
+[INFO] [7e0497cf-d1f0-4bd8-88e5-bc586eb33b24] [2017-01-05 17:14:12 GMT-05:00] Running setup: users
+[INFO] [c548009e-4cf0-4b49-a2fd-e6ab1ad371ea] [2017-01-05 17:14:12 GMT-05:00] Running setup: tokens
+[INFO] [16954e8e-961c-46ea-809d-b4037c590949] [2017-01-05 17:14:12 GMT-05:00] Running setup: logs
+[INFO] [c98f59cb-b893-4555-a217-7042332716d0] [2017-01-05 17:14:12 GMT-05:00] Running setup: applications
+[INFO] [6749ac4d-e039-4586-baeb-6c02e48d0ba0] [2017-01-05 17:19:18 GMT-05:00] Running setup: users
+[INFO] [d8da79d6-652e-4ded-a24a-a46f6fd5935c] [2017-01-05 17:19:18 GMT-05:00] Running setup: tokens
+[INFO] [092c1584-c3d1-4d2b-9662-397087aae265] [2017-01-05 17:19:18 GMT-05:00] Running setup: logs
+[INFO] [7bf63039-54ab-42cf-aaca-845bcf966ed4] [2017-01-05 17:19:18 GMT-05:00] Running setup: applications
+[INFO] [d33a4160-280d-4fb1-92d5-fef57ad4c2c4] [2017-01-05 17:24:44 GMT-05:00] Running setup: users
+[INFO] [5fdaa572-84b4-4c3f-b23e-9b011db2978c] [2017-01-05 17:24:44 GMT-05:00] Running setup: tokens
+[INFO] [4f51b992-1a7a-4f0d-a2dc-ebbba7b3fc8a] [2017-01-05 17:24:44 GMT-05:00] Running setup: logs
+[INFO] [2d98f4d6-c463-450a-ab68-ca7d2243acf7] [2017-01-05 17:24:44 GMT-05:00] Running setup: applications
+[INFO] [bd8ead1d-a488-4be0-97a0-b2cbb6e02248] [2017-01-05 17:26:37 GMT-05:00] Running setup: users
+[INFO] [9408f82e-87f3-4cbc-ac3c-c58ecd9310a6] [2017-01-05 17:26:37 GMT-05:00] Running setup: tokens
+[INFO] [73ef8205-3f50-47b6-807c-3e4bec23d3e7] [2017-01-05 17:26:37 GMT-05:00] Running setup: logs
+[INFO] [230f1740-492c-481a-9e82-e6474c2683cb] [2017-01-05 17:26:37 GMT-05:00] Running setup: applications
+[INFO] [1c9558bf-cb8f-4109-b001-b7310ca9856f] [2017-01-05 17:28:32 GMT-05:00] Running setup: users
+[INFO] [a75290c3-53fc-41db-8781-a7178c490a63] [2017-01-05 17:28:32 GMT-05:00] Running setup: tokens
+[INFO] [5daa35f7-010d-4c2b-b194-0365f6d4da74] [2017-01-05 17:28:32 GMT-05:00] Running setup: logs
+[INFO] [ed704956-3630-413d-b926-4c5b618aa419] [2017-01-05 17:28:32 GMT-05:00] Running setup: applications
+[INFO] [bbb3f82c-4e37-4ce5-87b6-559492832efd] [2017-01-05 17:30:00 GMT-05:00] Running setup: users
+[INFO] [5be7420e-19e5-4b4e-abcc-fe42d9f69246] [2017-01-05 17:30:00 GMT-05:00] Running setup: tokens
+[INFO] [cc1bcfed-5dda-48cd-9d35-556cc748f9d3] [2017-01-05 17:30:00 GMT-05:00] Running setup: logs
+[INFO] [dceacbfb-7e76-4057-a63f-4c2bd940f777] [2017-01-05 17:30:00 GMT-05:00] Running setup: applications
+[INFO] [1eac56bc-4fac-4c7c-bed2-ccf801b7d70d] [2017-01-05 17:30:51 GMT-05:00] Running setup: users
+[INFO] [2e8f2729-526d-447b-99db-e7db0b4e4c5c] [2017-01-05 17:30:51 GMT-05:00] Running setup: tokens
+[INFO] [2dc9163e-5374-468a-97ff-ce5caa5c4662] [2017-01-05 17:30:51 GMT-05:00] Running setup: logs
+[INFO] [4898851c-14f8-4ba7-8b01-9d191052feb8] [2017-01-05 17:30:51 GMT-05:00] Running setup: applications
+[INFO] [ba5ae6d4-c2ab-4ef1-9a25-48da3701c080] [2017-01-05 17:45:19 GMT-05:00] Running setup: users
+[INFO] [caf93d76-9987-45d5-b265-c7d12ea3f966] [2017-01-05 17:45:19 GMT-05:00] Running setup: tokens
+[INFO] [550b5979-6801-4ee5-a642-0c907dfba74e] [2017-01-05 17:45:19 GMT-05:00] Running setup: logs
+[INFO] [f5796ec5-7915-4030-893c-0978c616361f] [2017-01-05 17:45:19 GMT-05:00] Running setup: applications
+[INFO] [a20bb562-9cb2-40e3-8083-df710c712c0e] [2017-01-05 18:12:53 GMT-05:00] Running setup: users
+[INFO] [238b1253-deff-4b1a-8f6a-d7d74b87d876] [2017-01-05 18:12:53 GMT-05:00] Running setup: tokens
+[INFO] [daf85739-8f32-4cc7-b6a2-9d8f3b852494] [2017-01-05 18:12:53 GMT-05:00] Running setup: logs
+[INFO] [4f756872-d4cf-49a9-afaf-76446b30d49f] [2017-01-05 18:12:53 GMT-05:00] Running setup: applications
+[INFO] [3869120d-b1f3-4ac3-904b-880f78dbf517] [2017-01-06 13:11:42 GMT-05:00] Running setup: users
+[INFO] [01a09f86-9e34-4f37-b180-4559cce602da] [2017-01-06 13:11:42 GMT-05:00] Running setup: tokens
+[INFO] [8b36aed5-0cf5-4268-8b94-c4a2d04f904b] [2017-01-06 13:11:42 GMT-05:00] Running setup: logs
+[INFO] [9dc1c330-2bcf-4eb3-93a1-cbf1bda12ec6] [2017-01-06 13:11:42 GMT-05:00] Running setup: applications
+[ERROR] [2bad17b4-48ec-438b-b4bc-080013741b15] [2017-01-06 13:12:15 GMT-05:00] Error msg: error("ERROR:  argument of WHERE must be type boolean, not type integer\nLINE 1: SELECT COUNT(*) AS counter FROM applications  WHERE 1\n                                                            ^")
+[ERROR] [3942e32f-3148-468b-bea4-91ec7725edef] [2017-01-06 13:12:15 GMT-05:00] Error msg: error("ERROR:  argument of WHERE must be type boolean, not type integer\nLINE 1: SELECT COUNT(*) AS counter FROM apptokens  WHERE 1\n                                                         ^")
+[INFO] [bab6bf5e-38ef-4f67-8a6d-f9a3a0ba2b8c] [2017-01-06 13:17:40 GMT-05:00] Running setup: users
+[INFO] [674d9c35-9073-4b04-ab8b-ceb2d2fcbef5] [2017-01-06 13:17:40 GMT-05:00] Running setup: tokens
+[INFO] [bf2880ef-c5b7-4973-8720-4122e32dd713] [2017-01-06 13:17:40 GMT-05:00] Running setup: logs
+[INFO] [5990d86b-833d-4413-83cd-af25c8c2e4ac] [2017-01-06 13:17:40 GMT-05:00] Running setup: applications
+[INFO] [6a73b408-5ca6-4da5-8acd-b44d3053b5d5] [2017-01-06 14:11:06 GMT-05:00] Running setup: users
+[INFO] [72e871c8-4b67-4f85-8c16-80a7ce332d7a] [2017-01-06 14:11:06 GMT-05:00] Running setup: tokens
+[INFO] [265b7d4c-eaa0-4767-b03e-571a8822c0b4] [2017-01-06 14:11:06 GMT-05:00] Running setup: logs
+[INFO] [86bbd35a-ce70-42b8-89e1-bb7939b59534] [2017-01-06 14:11:06 GMT-05:00] Running setup: applications
+[INFO] [241b600c-3973-4bf1-9e21-3ba8b9d905e3] [2017-01-06 14:25:03 GMT-05:00] Running setup: users
+[INFO] [7550fc6e-834c-46cd-a965-fd0c9a846a0b] [2017-01-06 14:25:03 GMT-05:00] Running setup: tokens
+[INFO] [18274098-af30-4455-bf73-0929da2beae0] [2017-01-06 14:25:03 GMT-05:00] Running setup: logs
+[INFO] [8891a1bc-ae1b-4733-9cca-98502ad7b3cc] [2017-01-06 14:25:03 GMT-05:00] Running setup: applications
+[INFO] [3d4fa173-2973-42da-b56a-1b906b0b8a4b] [2017-01-06 14:25:49 GMT-05:00] Running setup: users
+[INFO] [063d9c9f-491f-4ecb-92de-91f223f0517d] [2017-01-06 14:25:49 GMT-05:00] Running setup: tokens
+[INFO] [9dc9b030-38c8-45a6-ac6f-75df31b2791e] [2017-01-06 14:25:49 GMT-05:00] Running setup: logs
+[INFO] [3d649407-1709-4f8d-a332-0aac26d9fb9c] [2017-01-06 14:25:49 GMT-05:00] Running setup: applications
+[INFO] [052bfde0-7227-4ba3-b0ea-1226bbdf311d] [2017-01-06 14:26:25 GMT-05:00] Running setup: users
+[INFO] [850742d7-c3f1-43d8-8e91-3d5bf1253e68] [2017-01-06 14:26:25 GMT-05:00] Running setup: tokens
+[INFO] [d69c5972-7770-4e56-8613-f926a3866763] [2017-01-06 14:26:25 GMT-05:00] Running setup: logs
+[INFO] [36aa8f6e-a2e7-4e53-9952-24aecf6235f0] [2017-01-06 14:26:25 GMT-05:00] Running setup: applications
+[ERROR] [086abf00-5585-41c3-a2cd-9f6e7400aec4] [2017-01-06 14:26:28 GMT-05:00] Error msg: error("ERROR:  operator does not exist: character varying = uuid\nLINE 1: ...*) AS counter FROM logs  WHERE token = $1  AND loglevel = $1\n                                                                   ^\nHINT:  No operator matches the given name and argument type(s). You might need to add explicit type casts.")
+[INFO] [cf418d90-487a-406a-a3c3-3266c8333f5e] [2017-01-06 14:26:47 GMT-05:00] Running setup: users
+[INFO] [a56b1537-6b40-4950-abae-e2fd7d15a071] [2017-01-06 14:26:47 GMT-05:00] Running setup: tokens
+[INFO] [91dec64c-bc93-45bf-9d81-e99fbeeb02ea] [2017-01-06 14:26:47 GMT-05:00] Running setup: logs
+[INFO] [1610eabb-89d9-4db6-ac23-a3713c9f168b] [2017-01-06 14:26:47 GMT-05:00] Running setup: applications
+[INFO] [73a5dae4-93d7-4c40-a175-e20c1984fc8d] [2017-01-06 14:27:52 GMT-05:00] Running setup: users
+[INFO] [bccc9c9b-3bc3-4bf2-a25d-60176969b42e] [2017-01-06 14:27:52 GMT-05:00] Running setup: tokens
+[INFO] [30ab203f-eb93-4091-ac23-684d0203fd28] [2017-01-06 14:27:52 GMT-05:00] Running setup: logs
+[INFO] [b537a9fe-14cb-4f57-8da9-86990c215c52] [2017-01-06 14:27:52 GMT-05:00] Running setup: applications
+[INFO] [4d5b8950-a41d-4f3f-b761-d6cd68131859] [2017-01-06 14:32:24 GMT-05:00] Running setup: users
+[INFO] [555e6e88-ce6a-40e1-8773-9169bc1521d9] [2017-01-06 14:32:24 GMT-05:00] Running setup: tokens
+[INFO] [c0b47272-233c-4907-9c8a-32e607c4f01c] [2017-01-06 14:32:24 GMT-05:00] Running setup: logs
+[INFO] [6d16a68b-75b9-429c-b257-3c543a103a08] [2017-01-06 14:32:24 GMT-05:00] Running setup: applications
+[INFO] [e6609690-4c1a-4b68-a5d9-b13b424ac613] [2017-01-06 14:35:02 GMT-05:00] Running setup: users
+[INFO] [c8ac477d-85b6-4d45-9b01-77e7c313e5d4] [2017-01-06 14:35:02 GMT-05:00] Running setup: tokens
+[INFO] [92c961ad-23fc-4efd-a03d-d38804c21957] [2017-01-06 14:35:02 GMT-05:00] Running setup: logs
+[INFO] [7347e2c9-562a-40a1-a0aa-3fcd852664c3] [2017-01-06 14:35:02 GMT-05:00] Running setup: applications
+[INFO] [67c72933-1f5b-4597-9a3d-98b9a172cc49] [2017-01-06 14:35:06 GMT-05:00] Running setup: users
+[INFO] [d8395b5b-a41c-4f09-9a3b-2af0f1add09d] [2017-01-06 14:35:06 GMT-05:00] Running setup: tokens
+[INFO] [65c710e8-6f48-407a-8e4c-46883207d309] [2017-01-06 14:35:06 GMT-05:00] Running setup: logs
+[INFO] [fc5ebec0-49f5-4b04-a985-7afd98036f48] [2017-01-06 14:35:06 GMT-05:00] Running setup: applications
+[INFO] [7d684f54-345b-4310-923b-5a3e8146be4d] [2017-01-06 15:34:44 GMT-05:00] Running setup: users
+[INFO] [fe0eb62c-c58f-48cb-b323-026be2ee71da] [2017-01-06 15:34:44 GMT-05:00] Running setup: tokens
+[INFO] [1250d41b-e13a-4734-b7c2-11019e00249d] [2017-01-06 15:34:44 GMT-05:00] Running setup: logs
+[INFO] [53c78a7e-8b39-4b2d-8783-2758bd5b75e9] [2017-01-06 15:34:44 GMT-05:00] Running setup: applications
+[INFO] [f3d19c05-5a97-401b-aa2c-9e966a3b8bf3] [2017-01-06 15:53:07 GMT-05:00] Running setup: users
+[INFO] [d031af5b-771c-4f53-8647-612c00b82e56] [2017-01-06 15:53:07 GMT-05:00] Running setup: tokens
+[INFO] [7acbd08c-feab-42fb-88a4-bb199aeabf6e] [2017-01-06 15:53:07 GMT-05:00] Running setup: logs
+[INFO] [96643805-7938-4831-b6a5-ef774efcb5cf] [2017-01-06 15:53:07 GMT-05:00] Running setup: applications
+[INFO] [15123be5-dd51-45a7-88de-1866c04ceb65] [2017-01-06 15:57:41 GMT-05:00] Running setup: users
+[INFO] [f4819b16-8ac2-4103-94f3-aaad54e5e378] [2017-01-06 15:57:41 GMT-05:00] Running setup: tokens
+[INFO] [171446e2-5233-4063-b9f7-828b7b83f2e6] [2017-01-06 15:57:41 GMT-05:00] Running setup: logs
+[INFO] [a39e40b0-d45a-4f90-af90-404d4a906aea] [2017-01-06 15:57:41 GMT-05:00] Running setup: applications
+[INFO] [cc1bb4ac-980a-483c-8727-a61f4270d03c] [2017-01-06 16:07:45 GMT-05:00] Running setup: users
+[INFO] [36092910-0f1f-4f5d-9ab3-92bd1005e60e] [2017-01-06 16:07:45 GMT-05:00] Running setup: tokens
+[INFO] [01a504b7-17f2-4d0d-b041-790b472635dc] [2017-01-06 16:07:45 GMT-05:00] Running setup: logs
+[INFO] [d9c68949-3fac-4f00-ab1c-daef36351a02] [2017-01-06 16:07:45 GMT-05:00] Running setup: applications
+[INFO] [7124a49b-38c5-4668-9b4f-000502d38c18] [2017-01-06 16:27:17 GMT-05:00] Running setup: users
+[INFO] [a2c3d439-2cfd-4dbf-a994-1de4069a5d9b] [2017-01-06 16:27:17 GMT-05:00] Running setup: tokens
+[INFO] [ef40e897-8e90-4e85-9aad-851df00bb8c5] [2017-01-06 16:27:17 GMT-05:00] Running setup: logs
+[INFO] [b4b599b2-65bf-408a-a453-16444c012096] [2017-01-06 16:27:17 GMT-05:00] Running setup: applications
+[INFO] [5bc03512-f69a-4de6-a40e-d76612b7825e] [2017-01-06 16:33:26 GMT-05:00] Running setup: users
+[INFO] [b68e4fa3-ff45-4e89-9088-c8dd3b31b95e] [2017-01-06 16:33:26 GMT-05:00] Running setup: tokens
+[INFO] [d5609266-2fbb-4092-ac13-aecaba73cdb0] [2017-01-06 16:33:26 GMT-05:00] Running setup: logs
+[INFO] [1fa56d7f-8e55-40c1-910a-28814a775381] [2017-01-06 16:33:26 GMT-05:00] Running setup: applications
+[INFO] [6717b34a-fe05-49b7-8f68-da00ccc7af11] [2017-01-08 17:06:41 GMT-05:00] Running setup: users
+[INFO] [7ac65e76-4313-48a6-87cc-d68be6ef25df] [2017-01-08 17:06:41 GMT-05:00] Running setup: tokens
+[INFO] [b6ac9d7f-f5f3-4bec-a5b1-b857a2ea608c] [2017-01-08 17:06:41 GMT-05:00] Running setup: logs
+[INFO] [8b5f6a38-7e70-43b1-8ae8-51df0784ef11] [2017-01-08 17:06:41 GMT-05:00] Running setup: applications
+[INFO] [47a72f2c-26a8-469c-9897-6fc502fbfd58] [2017-01-08 17:08:08 GMT-05:00] Running setup: users
+[INFO] [45916ae7-4840-4c74-8832-8b0bdbc9819a] [2017-01-08 17:08:08 GMT-05:00] Running setup: tokens
+[INFO] [13f89e8f-ba35-49fe-9bc8-074f4c294815] [2017-01-08 17:08:08 GMT-05:00] Running setup: logs
+[INFO] [76bc1542-b346-41a1-bff8-ff982f31de24] [2017-01-08 17:08:08 GMT-05:00] Running setup: applications
+[INFO] [b210f7ff-b856-4272-bf5a-6c606ed77484] [2017-01-08 17:21:36 GMT-05:00] Running setup: users
+[INFO] [c2c68154-29c0-45d8-a64d-7e45ef2bc3e8] [2017-01-08 17:21:36 GMT-05:00] Running setup: tokens
+[INFO] [3c2beaa8-7b12-4efa-81fb-67e2ba3b5073] [2017-01-08 17:21:36 GMT-05:00] Running setup: logs
+[INFO] [ddf9f86c-a75c-4382-804a-1608ae5e7404] [2017-01-08 17:21:36 GMT-05:00] Running setup: applications
+[INFO] [681182ab-32b8-4609-9b8c-ac1faddb478f] [2017-01-08 17:22:49 GMT-05:00] Running setup: users
+[INFO] [dcd632a8-7d86-4176-bb34-b87dec37dfb4] [2017-01-08 17:22:49 GMT-05:00] Running setup: tokens
+[INFO] [547ac173-d803-4c23-bb9b-6878d398fb15] [2017-01-08 17:22:49 GMT-05:00] Running setup: logs
+[INFO] [30eb51e0-82b4-4322-ab81-729493d747e0] [2017-01-08 17:22:49 GMT-05:00] Running setup: applications
+[INFO] [804d9860-4b3f-48ed-b56c-15f56295c8cc] [2017-01-08 17:33:14 GMT-05:00] Running setup: users
+[INFO] [e30ad143-a4ca-4cfd-90b4-4c1ba1a5099f] [2017-01-08 17:33:14 GMT-05:00] Running setup: tokens
+[INFO] [ad94c37c-abb3-4b81-aa4b-39abb202e36f] [2017-01-08 17:33:14 GMT-05:00] Running setup: logs
+[INFO] [57b8ed67-26ab-4651-952b-356a58527b90] [2017-01-08 17:33:14 GMT-05:00] Running setup: applications
+[INFO] [5c992e5e-397a-4179-a80b-2ce671f3c236] [2017-01-08 17:33:57 GMT-05:00] Running setup: users
+[INFO] [e3313d6a-efb9-490b-b325-96a273115281] [2017-01-08 17:33:57 GMT-05:00] Running setup: tokens
+[INFO] [a3a02d3f-2e09-4b73-a2f2-75242f52aaeb] [2017-01-08 17:33:57 GMT-05:00] Running setup: logs
+[INFO] [59b1b33f-6907-4665-bda8-9da844d3f06e] [2017-01-08 17:33:57 GMT-05:00] Running setup: applications
+[INFO] [884b51ec-4835-453e-9ac0-0be3743618c5] [2017-01-08 17:44:21 GMT-05:00] Running setup: users
+[INFO] [1cf9bc3c-4a7b-49e2-bf7d-9cc06a39a46c] [2017-01-08 17:44:21 GMT-05:00] Running setup: tokens
+[INFO] [fa593c69-39c7-48b0-936c-83b1fe94e4c7] [2017-01-08 17:44:21 GMT-05:00] Running setup: logs
+[INFO] [014be477-37b7-48d3-a3e0-86cf9d492617] [2017-01-08 17:44:21 GMT-05:00] Running setup: applications
+[INFO] [a7237bdc-f70e-4f30-88eb-b8ece7b0f81c] [2017-01-08 17:44:34 GMT-05:00] Running setup: users
+[INFO] [c7d4f686-8a4c-4b94-9e4b-b01dee015d4b] [2017-01-08 17:44:34 GMT-05:00] Running setup: tokens
+[INFO] [141f00f0-f894-4945-ba6e-b6621ec81fc1] [2017-01-08 17:44:34 GMT-05:00] Running setup: logs
+[INFO] [97848ee6-9975-494e-9c6e-274961014940] [2017-01-08 17:44:34 GMT-05:00] Running setup: applications
+[INFO] [8f1fbcac-93c7-4507-a99b-762895bec96b] [2017-01-08 17:58:40 GMT-05:00] Running setup: users
+[INFO] [b5f73e8c-ced2-4f25-a718-1f13338e764e] [2017-01-08 17:58:40 GMT-05:00] Running setup: tokens
+[INFO] [63fa3d00-f64a-4311-ae1b-5db99f5c6b5b] [2017-01-08 17:58:40 GMT-05:00] Running setup: logs
+[INFO] [8d95b85d-7779-4bea-ac85-15a7a151e61f] [2017-01-08 17:58:40 GMT-05:00] Running setup: applications
+[INFO] [eac21187-8e14-4671-a265-4038a6de7c7b] [2017-01-08 18:00:23 GMT-05:00] Running setup: users
+[INFO] [cdf9bf97-d2ef-40a7-85bc-b26a1589c057] [2017-01-08 18:00:23 GMT-05:00] Running setup: tokens
+[INFO] [6faed590-35e8-4c26-809c-87163fda0f34] [2017-01-08 18:00:23 GMT-05:00] Running setup: logs
+[INFO] [a8d5e34e-abd3-4f2d-af9e-a1da8c4e4d87] [2017-01-08 18:00:23 GMT-05:00] Running setup: applications
+[ERROR] [b81ff9bf-c274-4b7a-b93f-b1d764f2dd3c] [2017-01-08 18:00:33 GMT-05:00] Error: error("ERROR:  null value in column \"uniqueid\" violates not-null constraint\nDETAIL:  Failing row contains (null, , , , , Donkey, Kong, kong@mailinator.com).")
+[ERROR] [1074a173-bd16-4ff7-bd15-3aa4cf257f5f] [2017-01-08 18:00:33 GMT-05:00] Error: error("ERROR:  null value in column \"uniqueid\" violates not-null constraint\nDETAIL:  Failing row contains (null, , , , , Donkey, Kong, kong@mailinator.com).")
+[ERROR] [c8ebdcec-a946-419a-9faf-4fc702006d71] [2017-01-08 18:00:33 GMT-05:00] Error: error("error(\"ERROR:  null value in column \\\"uniqueid\\\" violates not-null constraint\\nDETAIL:  Failing row contains (null, , , , , Donkey, Kong, kong@mailinator.com).\")")
+[ERROR] [b89179b2-7f29-49ee-b547-955381f547bb] [2017-01-08 18:00:33 GMT-05:00] Error: error("error(\"error(\\\"ERROR:  null value in column \\\\\\\"uniqueid\\\\\\\" violates not-null constraint\\\\nDETAIL:  Failing row contains (null, , , , , Donkey, Kong, kong@mailinator.com).\\\")\")")
+[INFO] [d2694cca-a709-43f0-a9d7-628f400e5ac2] [2017-01-08 18:21:36 GMT-05:00] Running setup: users
+[INFO] [9bc2af99-a2f2-41ba-b51f-e01dc7885b48] [2017-01-08 18:21:36 GMT-05:00] Running setup: tokens
+[INFO] [b481e87c-85bd-4074-b08c-c06c8df59b8c] [2017-01-08 18:21:36 GMT-05:00] Running setup: logs
+[INFO] [c80d5792-f710-4101-940f-5cee7b0b1093] [2017-01-08 18:21:36 GMT-05:00] Running setup: applications
+[ERROR] [4996218a-82c1-4067-b85e-0a906308b6da] [2017-01-08 18:25:11 GMT-05:00] Error msg: error("ERROR:  column \"uniqueID\" does not exist\nLINE 1: ...stname\" = $5, \"lastname\" = $6, \"email\" = $7 WHERE \"uniqueID\"...\n                                                             ^\nHINT:  Perhaps you meant to reference the column \"users.uniqueid\".")
+[ERROR] [db15a413-1b91-48d3-a99c-5f6065d0c0fd] [2017-01-08 18:25:11 GMT-05:00] Error msg: error("ERROR:  column \"uniqueID\" does not exist\nLINE 1: ...stname\" = $5, \"lastname\" = $6, \"email\" = $7 WHERE \"uniqueID\"...\n                                                             ^\nHINT:  Perhaps you meant to reference the column \"users.uniqueid\".")
+[ERROR] [14e6909e-aff8-4209-be48-fb4d245feee4] [2017-01-08 18:25:11 GMT-05:00] Error: error("error(\"ERROR:  column \\\"uniqueID\\\" does not exist\\nLINE 1: ...stname\\\" = $5, \\\"lastname\\\" = $6, \\\"email\\\" = $7 WHERE \\\"uniqueID\\\"...\\n                                                             ^\\nHINT:  Perhaps you meant to reference the column \\\"users.uniqueid\\\".\")")
+[INFO] [b8743700-1965-4f0b-8f16-35c708ef9f6a] [2017-01-08 18:31:16 GMT-05:00] Running setup: users
+[INFO] [948dc4b2-9ca5-4598-ae05-69a5baad67e0] [2017-01-08 18:31:16 GMT-05:00] Running setup: tokens
+[INFO] [e59284b5-058e-4dc9-9822-7cbc6b6e9e81] [2017-01-08 18:31:16 GMT-05:00] Running setup: logs
+[INFO] [1012132c-8746-4660-b709-66fab9ad8d59] [2017-01-08 18:31:16 GMT-05:00] Running setup: applications
+[ERROR] [105ce28a-224f-432e-bf29-b7c14827c190] [2017-01-08 18:31:29 GMT-05:00] Error msg: error("ERROR:  column \"uniqueID\" does not exist\nLINE 1: ...stname\" = $5, \"lastname\" = $6, \"email\" = $7 WHERE \"uniqueID\"...\n                                                             ^\nHINT:  Perhaps you meant to reference the column \"users.uniqueid\".")
+[ERROR] [17b3b1b1-d5a3-445d-9278-45726e22b3ca] [2017-01-08 18:31:29 GMT-05:00] Error msg: error("ERROR:  column \"uniqueID\" does not exist\nLINE 1: ...stname\" = $5, \"lastname\" = $6, \"email\" = $7 WHERE \"uniqueID\"...\n                                                             ^\nHINT:  Perhaps you meant to reference the column \"users.uniqueid\".")
+[ERROR] [6db8efb8-a746-49eb-a059-fb19d73956dd] [2017-01-08 18:31:29 GMT-05:00] Error: error("error(\"ERROR:  column \\\"uniqueID\\\" does not exist\\nLINE 1: ...stname\\\" = $5, \\\"lastname\\\" = $6, \\\"email\\\" = $7 WHERE \\\"uniqueID\\\"...\\n                                                             ^\\nHINT:  Perhaps you meant to reference the column \\\"users.uniqueid\\\".\")")
+[INFO] [eb9c4cba-74f8-4c50-a133-42c27d6c6e7a] [2017-01-08 20:39:00 GMT-05:00] Running setup: users
+[INFO] [afa3f925-456f-4cf0-9948-5795606aba8c] [2017-01-08 20:39:00 GMT-05:00] Running setup: tokens
+[INFO] [57bfb022-f27d-4eed-9637-13fb6da338a2] [2017-01-08 20:39:00 GMT-05:00] Running setup: logs
+[INFO] [9effc7db-1b28-4268-95a2-9519d693db1f] [2017-01-08 20:39:00 GMT-05:00] Running setup: applications
+[INFO] [ae98949e-24b9-4875-a080-7b1ffba16870] [2017-01-08 20:41:23 GMT-05:00] Running setup: users
+[INFO] [20ef85ee-b900-463c-9379-77cd8903780f] [2017-01-08 20:41:23 GMT-05:00] Running setup: tokens
+[INFO] [30506c01-0ffa-4038-acd2-f6a6f11201ac] [2017-01-08 20:41:23 GMT-05:00] Running setup: logs
+[INFO] [763deb11-2cb1-4c2d-be3d-2ce14d2cc2ee] [2017-01-08 20:41:23 GMT-05:00] Running setup: applications
+[INFO] [1f7d9d0a-1c89-4abb-90be-226619ed8c17] [2017-01-08 20:41:58 GMT-05:00] Running setup: users
+[INFO] [69fb9660-278a-453b-9df3-1b8ca7f7a246] [2017-01-08 20:41:58 GMT-05:00] Running setup: tokens
+[INFO] [fcb6f2e2-efab-4694-95f6-e75ef09e634f] [2017-01-08 20:41:58 GMT-05:00] Running setup: logs
+[INFO] [ad74ec08-a13d-4c01-b159-6ea47b82694e] [2017-01-08 20:41:58 GMT-05:00] Running setup: applications
+[INFO] [a218b526-0543-4738-986b-6cb071809104] [2017-01-08 20:43:13 GMT-05:00] Running setup: users
+[INFO] [ab00148d-9527-4215-857b-abae8f853574] [2017-01-08 20:43:13 GMT-05:00] Running setup: tokens
+[INFO] [6aacedd5-aa75-4e9a-90a5-a8e85ee1ff1a] [2017-01-08 20:43:13 GMT-05:00] Running setup: logs
+[INFO] [0a298071-63ab-4e39-bcbf-685d540b488e] [2017-01-08 20:43:13 GMT-05:00] Running setup: applications
+[INFO] [b3d5cdc4-8f8e-421a-bd89-aa6961aacb90] [2017-01-08 21:00:56 GMT-05:00] Running setup: users
+[INFO] [7e798110-3d5e-4c55-8e45-d99d804ce1c5] [2017-01-08 21:00:56 GMT-05:00] Running setup: tokens
+[INFO] [53863117-2f96-4368-9ad7-7347940dbe03] [2017-01-08 21:00:56 GMT-05:00] Running setup: logs
+[INFO] [323c68ec-3a72-46c8-8e13-a19a8498fa97] [2017-01-08 21:00:56 GMT-05:00] Running setup: applications
+[INFO] [18104dd6-ddb5-4011-a044-1276aa8f5662] [2017-01-08 21:09:26 GMT-05:00] Running setup: users
+[INFO] [65d53d2f-12a4-43fa-9e4e-64dd5d203d49] [2017-01-08 21:09:26 GMT-05:00] Running setup: tokens
+[INFO] [edbaaab9-2a09-45b4-8ba6-ced8d7db1524] [2017-01-08 21:09:26 GMT-05:00] Running setup: logs
+[INFO] [6327bdce-02e1-4446-9873-87902f839fc7] [2017-01-08 21:09:26 GMT-05:00] Running setup: applications
+[INFO] [6a5e35f2-67af-4893-a903-252248312388] [2017-01-08 21:12:06 GMT-05:00] Running setup: users
+[INFO] [f31a99b0-9b33-4bea-9e38-b255a87d7b5e] [2017-01-08 21:12:06 GMT-05:00] Running setup: tokens
+[INFO] [a7ee62aa-cfbd-4035-b1db-ee4673b7bb79] [2017-01-08 21:12:06 GMT-05:00] Running setup: logs
+[INFO] [35e880fc-9672-4c26-9959-6fcef54af6a9] [2017-01-08 21:12:06 GMT-05:00] Running setup: applications
+[INFO] [ddb84360-76f7-46ca-a41b-a5b9f5cf1518] [2017-01-08 22:12:22 GMT-05:00] Running setup: users
+[INFO] [f62b7a34-3605-46f8-b6ff-4613fddd6dcc] [2017-01-08 22:12:22 GMT-05:00] Running setup: tokens
+[INFO] [b51a8287-c379-4c7b-80a1-e11bb1cfe7e7] [2017-01-08 22:12:22 GMT-05:00] Running setup: logs
+[INFO] [d5b5ea6f-8672-451e-8513-89990f2e868d] [2017-01-08 22:12:22 GMT-05:00] Running setup: applications
+[INFO] [11ea95d7-fb2f-4d30-a57f-23c86a79ea8a] [2017-01-08 22:13:42 GMT-05:00] Running setup: users
+[INFO] [2b510db4-ff98-4a71-9f8d-afd1ecaf8e1f] [2017-01-08 22:13:42 GMT-05:00] Running setup: tokens
+[INFO] [1b3db3cf-5e70-40a3-a7e8-58d011ae11f5] [2017-01-08 22:13:42 GMT-05:00] Running setup: logs
+[INFO] [c8f3b360-440a-4922-8646-ddffe95d8e96] [2017-01-08 22:13:42 GMT-05:00] Running setup: applications
+[INFO] [27a0dc21-ff95-4125-a7fe-982f76cb19b8] [2017-01-08 22:24:29 GMT-05:00] Running setup: users
+[INFO] [0c48b14f-a042-41f4-96e7-cf82264b51d5] [2017-01-08 22:24:29 GMT-05:00] Running setup: tokens
+[INFO] [7fd39423-c9c3-4035-a65b-020e4464b505] [2017-01-08 22:24:29 GMT-05:00] Running setup: logs
+[INFO] [99dc7022-26d0-4a20-8b50-d2ce9357a8e2] [2017-01-08 22:24:29 GMT-05:00] Running setup: applications
+[INFO] [7b4b1bc6-c993-4f0d-a05b-4643adbfb2e7] [2017-01-09 12:34:25 GMT-05:00] Running setup: users
+[INFO] [5661b7f3-28a1-40e8-b552-d1b3929f28ae] [2017-01-09 12:34:25 GMT-05:00] Running setup: tokens
+[INFO] [539cd487-b1fe-48b9-851d-8d1aa99aec76] [2017-01-09 12:34:25 GMT-05:00] Running setup: logs
+[INFO] [7754a794-e01b-47f6-9e21-d305d0ea3e74] [2017-01-09 12:34:25 GMT-05:00] Running setup: applications
+[INFO] [c5a8cdcf-d81b-4fe5-aecc-9dd045a1ebc8] [2017-01-09 12:36:05 GMT-05:00] Running setup: users
+[INFO] [07d026e0-25fd-4375-9eb2-d2486446d861] [2017-01-09 12:36:05 GMT-05:00] Running setup: tokens
+[INFO] [b082824f-b22e-486e-9af3-ef42a4c69961] [2017-01-09 12:36:05 GMT-05:00] Running setup: logs
+[INFO] [f279f194-ff3e-4f95-9d0b-2b72af0cc2e5] [2017-01-09 12:36:05 GMT-05:00] Running setup: applications
+[INFO] [7dbc1d19-a07b-4c8b-8673-503843264f4d] [2017-01-09 12:36:22 GMT-05:00] Running setup: users
+[INFO] [a04da3a5-53cf-43fd-81a5-7d8020ea83d0] [2017-01-09 12:36:22 GMT-05:00] Running setup: tokens
+[INFO] [f14457cb-630b-4a43-ba6b-0e61592744d7] [2017-01-09 12:36:22 GMT-05:00] Running setup: logs
+[INFO] [31a997eb-3745-47a9-bf5f-0f24e6e8b241] [2017-01-09 12:36:22 GMT-05:00] Running setup: applications
+[INFO] [d2d99ad9-43c2-41fd-af89-9eda5767e103] [2017-01-09 12:39:13 GMT-05:00] Running setup: users
+[INFO] [16e55f5d-6d52-4199-91f5-46ed35f7e530] [2017-01-09 12:39:13 GMT-05:00] Running setup: tokens
+[INFO] [997e3f10-aa8c-472d-b815-4c01f4ae201e] [2017-01-09 12:39:13 GMT-05:00] Running setup: logs
+[INFO] [46b30588-9842-4ec1-9c0b-b9ed1be28718] [2017-01-09 12:39:13 GMT-05:00] Running setup: applications
+[INFO] [3a69913f-7f96-4414-9f55-0c7ccd1c0a4b] [2017-01-09 12:53:35 GMT-05:00] Running setup: users
+[INFO] [039fa091-29f4-453e-943e-136588d78f9f] [2017-01-09 12:53:35 GMT-05:00] Running setup: tokens
+[INFO] [0194d175-8732-48e2-aff5-28d9da44b57c] [2017-01-09 12:53:35 GMT-05:00] Running setup: logs
+[INFO] [20338075-d95e-45fe-851a-6efacb3869ec] [2017-01-09 12:53:35 GMT-05:00] Running setup: applications
+[INFO] [a85903b8-a107-47fc-88ca-eaa0ec297939] [2017-01-09 13:04:44 GMT-05:00] Running setup: users
+[INFO] [fb683cbf-fd92-45bc-92b1-7f075fbe2a1e] [2017-01-09 13:04:44 GMT-05:00] Running setup: tokens
+[INFO] [598058cd-d329-4c79-aa33-208d92a4882d] [2017-01-09 13:04:44 GMT-05:00] Running setup: logs
+[INFO] [e047c0e8-7f1c-4041-91c3-8639b1c4e727] [2017-01-09 13:04:44 GMT-05:00] Running setup: applications
+[INFO] [81b9a96d-362a-4e51-8844-0c491ba1be56] [2017-01-09 13:15:02 GMT-05:00] Running setup: users
+[INFO] [fc6952c1-01ab-474d-860d-dcbdbec5f7b7] [2017-01-09 13:15:02 GMT-05:00] Running setup: tokens
+[INFO] [f351cc5b-49e9-4daa-9597-0484064bf9ea] [2017-01-09 13:15:02 GMT-05:00] Running setup: logs
+[INFO] [d8476e81-b155-4f8e-9bfc-bb232b919ff2] [2017-01-09 13:15:02 GMT-05:00] Running setup: applications
+[INFO] [73ad5a57-5f11-4427-a540-a3704391d80a] [2017-01-09 14:25:13 GMT-05:00] Running setup: users
+[INFO] [fdd9ae56-e21b-4d04-b0e5-296a5557e270] [2017-01-09 14:25:13 GMT-05:00] Running setup: tokens
+[INFO] [0e5bdd41-a90e-42bb-9a1d-0f391e1078db] [2017-01-09 14:25:13 GMT-05:00] Running setup: logs
+[INFO] [48a843b4-6608-4dd4-a39f-70f79fecee3b] [2017-01-09 14:25:13 GMT-05:00] Running setup: applications
+[INFO] [6f910561-6774-4e8a-939d-59d8a5004859] [2017-01-09 14:35:26 GMT-05:00] Running setup: users
+[INFO] [478f19c1-be87-4f27-b461-bdf31b592dab] [2017-01-09 14:35:26 GMT-05:00] Running setup: tokens
+[INFO] [25c2e088-5680-4f3c-a5ab-8172793667c0] [2017-01-09 14:35:26 GMT-05:00] Running setup: logs
+[INFO] [c73468ae-9604-4ec7-9df5-dec0525e1399] [2017-01-09 14:35:26 GMT-05:00] Running setup: applications
+[INFO] [b7fcd952-d82a-45cd-95e3-49574b46ecd0] [2017-01-09 14:36:40 GMT-05:00] Running setup: users
+[INFO] [4afb3222-1d7e-4965-a2ec-f565c1065634] [2017-01-09 14:36:40 GMT-05:00] Running setup: tokens
+[INFO] [58b84252-b843-4018-bdf8-58bb549b8417] [2017-01-09 14:36:40 GMT-05:00] Running setup: logs
+[INFO] [9f73908d-8b3b-42af-a16d-19d33c11f7d8] [2017-01-09 14:36:40 GMT-05:00] Running setup: applications
+[INFO] [c9eb4f19-bc76-4410-87e1-41de9dbfe0b4] [2017-01-09 14:42:35 GMT-05:00] Running setup: users
+[INFO] [e61d868b-bb8e-43be-95eb-35b8f0bbd9b5] [2017-01-09 14:42:35 GMT-05:00] Running setup: tokens
+[INFO] [1f293229-08ae-4554-a79c-536f57995841] [2017-01-09 14:42:35 GMT-05:00] Running setup: logs
+[INFO] [12c72037-7927-4f67-8929-c3db1ceafa0c] [2017-01-09 14:42:35 GMT-05:00] Running setup: applications
+[INFO] [db85ff5c-8b68-464c-9d04-f5459136e6ae] [2017-01-09 14:43:11 GMT-05:00] Running setup: users
+[INFO] [c7f13904-7c03-4e84-9044-62aac90c2a2c] [2017-01-09 14:43:11 GMT-05:00] Running setup: tokens
+[INFO] [cd0c2b0a-81c0-452e-afd7-2930e3dfbef6] [2017-01-09 14:43:11 GMT-05:00] Running setup: logs
+[INFO] [2b775522-6477-4c6e-8c46-ddf7b0bfa8fc] [2017-01-09 14:43:11 GMT-05:00] Running setup: applications
+[INFO] [cf10cd6b-9404-4068-851d-6f81c06f6cb7] [2017-01-09 14:59:30 GMT-05:00] Running setup: users
+[INFO] [aa153990-c803-4ea1-aa53-cb3d2e3c2620] [2017-01-09 14:59:30 GMT-05:00] Running setup: tokens
+[INFO] [5f668548-ec6e-4511-b11b-372ae460af8b] [2017-01-09 14:59:30 GMT-05:00] Running setup: logs
+[INFO] [ede38ecc-8c27-4d60-937d-e7be3a3c8e17] [2017-01-09 14:59:30 GMT-05:00] Running setup: applications

@@ -1,0 +1,15 @@
+<div id="leftMenu">
+{{#authenticated}}
+<h4 class="dmt"><a href="/logs"><span class="icon-list"></span> Logs</a></h4>
+<ul>
+	{{#tokensLeft}}
+		<li><a href="/logs/token/{{token}}"><span class="icon-bolt"></span> {{tokenName}}</a></li>
+	{{/tokensLeft}}
+</ul>
+<h4 class="dmt"><a href="/tokens"><span class="icon-cone"></span> Tokens</a></h4>
+<h4 class="dmt"><a href="/apps"><span class="icon-earth"></span> Applications</a></h4>
+<h4 class="dmt"><a href="/users"><span class="icon-users"></span> Users</a></h4>
+<h4 class="dmt"><a href="/docs"><span class="icon-map"></span> Documentation</a></h4>
+<h4 class="dmt"><a href="/logout"><span class="icon-warning"></span> Logout</a></h4>
+{{/authenticated}}
+</div>
