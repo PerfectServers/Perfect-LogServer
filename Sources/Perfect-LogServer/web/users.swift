@@ -69,6 +69,7 @@ extension WebHandlers {
 			"authenticated": contextAuthenticated,
 			"usermod?":"true",
 			"action": action,
+			"username": user.username,
 			"firstname": user.firstname,
 			"lastname": user.lastname,
 			"email": user.email,
@@ -104,7 +105,9 @@ extension WebHandlers {
 
 		if let firstname = request.param(name: "firstname"), !firstname.isEmpty,
 			let lastname = request.param(name: "lastname"), !lastname.isEmpty,
-			let email = request.param(name: "email"), !email.isEmpty{
+			let email = request.param(name: "email"), !email.isEmpty,
+			let username = request.param(name: "username"), !username.isEmpty{
+			user.username = username
 			user.firstname = firstname
 			user.lastname = lastname
 			user.email = email

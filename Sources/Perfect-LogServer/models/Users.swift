@@ -19,6 +19,7 @@ extension AuthAccount {
 		for row in t.rows() {
 			var r = [String: Any]()
 			r["uniqueid"] = row.uniqueID
+			r["username"] = row.username
 			r["firstname"] = row.firstname
 			r["lastname"] = row.lastname
 			r["email"] = row.email
