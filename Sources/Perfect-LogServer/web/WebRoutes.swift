@@ -42,6 +42,7 @@ func webRoutes() -> Routes {
 	r.add(method: .get, uris: ["/users/create", "/users/{id}/edit"], handler: WebHandlers.userMod)
 	r.add(method: .post, uris: ["/users/create", "/users/{id}/edit"], handler: WebHandlers.userModAction)
 	r.add(method: .delete, uri: "/users/{id}/delete", handler: WebHandlers.userDelete)
+	///users/qPStyRuhvw55aVajR5t6Xg/delete
 
 	r.add(method: .get, uri: "/docs", handler: WebHandlers.docs)
 	return r

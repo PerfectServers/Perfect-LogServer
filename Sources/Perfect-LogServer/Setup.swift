@@ -41,7 +41,11 @@ func setup() {
 	let logData = LogData()
 	try? logData.setup()
 
-	// LogData
+	// Applications
 	let appdata = Application()
 	try? appdata.setup()
+
+	// App Tokens
+	let tokendata = AppToken()
+	try? tokendata.setup()
 }

@@ -30,15 +30,15 @@ import PerfectHTTPServer
 import JSONConfig
 import PerfectRequestLogger
 
-
+let debugLogfile = "./debug.log"
 let webRoot = "./webroot"
+RequestLogFile.location = "./webLog.log"
 #if os(Linux)
 	let fileRoot = "/perfect-deployed/perfect-logserver/"
 	var httpPort = 8100
 #else
 	let fileRoot = ""
 	var httpPort = 8181
-	RequestLogFile.location = "./webLog.log"
 #endif
 
 let pturnstile = TurnstilePerfectRealm()

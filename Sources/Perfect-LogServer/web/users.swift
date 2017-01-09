@@ -11,7 +11,7 @@ import SwiftMoment
 import PerfectHTTP
 import PerfectTurnstilePostgreSQL
 import TurnstileCrypto
-
+import PerfectLogger
 
 /*
 r.add(method: .get, uri: "/apps", handler: WebHandlers.appList)
@@ -165,17 +165,20 @@ extension WebHandlers {
 
 			// cannot delete yourself
 			if user.uniqueID == request.user.authDetails?.account.uniqueID {
+				LogFile.debug("You cannot delete yourself.", eventid: "", logFile: debugLogfile)
 				redirectRequest(request, response, msg: "You cannot delete yourself.", template: "user")
 				return
 			}
 			let usersCount = AuthAccount()
 			try? usersCount.findAll()
 			if usersCount.results.cursorData.totalRecords <= 1 {
+				LogFile.debug("usersCount.results.cursorData.totalRecords <= 1", eventid: "", logFile: debugLogfile)
 				redirectRequest(request, response, msg: "You cannot delete yourself.", template: "user")
 				return
 			}
 
 			if user.uniqueID.isEmpty {
+				LogFile.debug("user.uniqueID.isEmpty Invalid User", eventid: "", logFile: debugLogfile)
 				redirectRequest(request, response, msg: "Invalid User", template: "user")
 			} else {
 				try? user.delete()
@@ -183,21 +186,16 @@ extension WebHandlers {
 		}
 
 
-		let users = AuthAccount.listUsers()
-
-		var context: [String : Any] = [
-			"accountID": contextAccountID,
-			"authenticated": contextAuthenticated,
-			"userlist?":"true",
-			"users": users
-		]
-		if contextAuthenticated {
-			for i in WebHandlers.extras() {
-				context[i.0] = i.1
-			}
+		response.setHeader(.contentType, value: "application/json")
+		var resp = [String: Any]()
+		resp["error"] = "None"
+		do {
+			try response.setBody(json: resp)
+		} catch {
+			print("error setBody: \(error)")
 		}
-
-		response.render(template: "users", context: context)
+		response.completed()
+		return
 	}
 
 }
