@@ -35,6 +35,7 @@ This account's username is "admin" and the password is "perfect".
 
 > It is **strongly recommended** that you create a new user for yourself, then delete this "admin" user account.
 
+See the "Integration" section below for how to include support for Remote Logging to your Perfect server side application.
 
 ## Installation and setup
 
@@ -113,6 +114,59 @@ When you send a POST request to your logging server, you also need to include a 
 The "appuuid", and "eventid" can be left empty, but the "loglevel" must be one of: debug, info, warn, error or critical.
 
 The "detail" section is flexible JSON - it can be any valid name/value JSON information you wish to log. You can put as little or as much in there but bear in mind that the more you store, the more will be displayed on the user interface.
+
+## Integration
+
+### Perfect / Swift SPM Dependency
+
+The "Perfect-Logging" dependency includes support for remote logging to this log server.
+
+To include the dependency in your project, add the following to your project's Package.swift file:
+
+``` swift
+.Package(url: "https://github.com/PerfectlySoft/Perfect-Logger.git", majorVersion: 1),
+```
+
+Now add the import directive to the file you wish to use the logging in:
+
+``` swift 
+import PerfectLogger
+```
+#### Configuration
+Three configuration parameters are required:
+
+``` swift
+// Your token
+RemoteLogger.token = "<your token>"
+
+// App ID (Optional)
+RemoteLogger.appid = "<your appid>"
+
+// URL to access the log server. 
+// Note, this is not the full API path, just the host and port.
+RemoteLogger.logServer = "http://localhost:8181"
+
+```
+
+
+#### To log events to the log server:
+
+``` swift
+var obj = [String: Any]()
+obj["one"] = "donkey"
+RemoteLogger.critical(obj)
+```
+
+#### Linking events with "eventid"
+
+Each log event returns an event id string. If an eventid string is supplied to the directive then it will use the supplied eventid in the log directive instead - this makes it easy to link together related events.
+
+``` swift
+let eid = RemoteLogger.critical(obj)
+RemoteLogger.info(obj, eventid: eid)
+```
+
+The returned eventid is marked @discardableResult therefore can be safely ignored if not required for re-use.
 
 
 
