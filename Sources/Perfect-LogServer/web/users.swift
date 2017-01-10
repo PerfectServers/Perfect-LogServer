@@ -154,7 +154,7 @@ extension WebHandlers {
 
 	static func userDelete(request: HTTPRequest, _ response: HTTPResponse) {
 
-		let contextAccountID = request.user.authDetails?.account.uniqueID ?? ""
+//		let contextAccountID = request.user.authDetails?.account.uniqueID ?? ""
 		let contextAuthenticated = request.user.authenticated
 		if !contextAuthenticated { response.redirect(path: "/login") }
 
