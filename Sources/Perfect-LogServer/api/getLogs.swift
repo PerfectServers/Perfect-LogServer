@@ -49,7 +49,7 @@ func logGetLog(request: HTTPRequest, _ response: HTTPResponse) {
 		var incoming = [String: Any]()
 		do {
 			incoming = try body.jsonDecode() as! [String: Any]
-			print(incoming)
+			//print(incoming)
 			if let tokenin = incoming["token"] {
 				token = tokenin as! String
 				params.append(token)

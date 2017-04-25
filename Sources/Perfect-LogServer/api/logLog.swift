@@ -45,23 +45,23 @@ func logLog(request: HTTPRequest, _ response: HTTPResponse) {
 	}
 	var incoming = [String: Any]()
 	do {
-		incoming = try body.jsonDecode() as! [String: Any]
+		incoming = try body.jsonDecode() as? [String: Any] ?? [String: Any]()
 
 		let this = LogData()
 
 		this.token = token
 
 		if let appuuid = incoming["appuuid"] {
-			this.appuuid = appuuid as! String
+			this.appuuid = appuuid as? String ?? ""
 		}
 		if let eventid = incoming["eventid"] {
-			this.eventid = eventid as! String
+			this.eventid = eventid as? String ?? ""
 		}
 		if let loglevel = incoming["loglevel"] {
-			this.loglevel = this.logLevelFromString(loglevel as! String)
+			this.loglevel = this.logLevelFromString(loglevel as? String ?? "")
 		}
 		if let detail = incoming["detail"] {
-			this.detail = detail as! [String : Any]
+			this.detail = detail as? [String:Any] ?? [String:Any]()
 		}
 
 		this.dategenerated = Int(Date().timeIntervalSince1970 * 1000)

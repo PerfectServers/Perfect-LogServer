@@ -70,3 +70,8 @@ buildlinux
 StORM*
 webLog*
 Package.swift.orig
+Package.pins
+perfect-logserver.service
+PADockerfile_build
+PADockerfile_deploy
+ApplicationConfigurationLinux.json

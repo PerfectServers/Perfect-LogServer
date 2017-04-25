@@ -39,7 +39,7 @@ class LogData: PostgresStORM {
 		self.eventid		= this.data["eventid"] as? String ?? ""
 		self.loglevel		= logLevelFromString(this.data["loglevel"] as? String ?? "")
 		if let detailObj = this.data["detail"] {
-			self.detail = detailObj as! [String:Any]
+			self.detail = detailObj as? [String:Any] ?? [String:Any]()
 		}
 		self.dategenerated = this.data["dategenerated"] as? Int ?? 0
 	}

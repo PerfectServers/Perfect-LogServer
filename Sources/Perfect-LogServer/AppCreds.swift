@@ -18,15 +18,23 @@ struct AppCredentials {
 }
 
 func makeCreds() {
-	if let config = JSONConfig(name: "\(fileRoot)ApplicationConfiguration.json") {
-		let dict = config.getValues()!
-		httpPort = dict["httpport"] as! Int
 
-		PostgresConnector.host        = dict["postgreshost"] as! String
-		PostgresConnector.username    = dict["postgresuser"] as! String
-		PostgresConnector.password    = dict["postgrespwd"] as! String
-		PostgresConnector.database    = dict["postgresdbname"] as! String
-		PostgresConnector.port        = dict["postgresport"] as! Int
+	#if os(Linux)
+		let fname = "./config/ApplicationConfigurationLinux.json"
+	#else
+		let fname = "./config/ApplicationConfiguration.json"
+	#endif
+
+
+	if let config = JSONConfig(name: fname) {
+		let dict = config.getValues()!
+		httpPort = dict["httpport"] as? Int ?? 8181
+
+		PostgresConnector.host        = dict["postgreshost"] as? String ?? ""
+		PostgresConnector.username    = dict["postgresuser"] as? String ?? ""
+		PostgresConnector.password    = dict["postgrespwd"] as? String ?? ""
+		PostgresConnector.database    = dict["postgresdbname"] as? String ?? ""
+		PostgresConnector.port        = dict["postgresport"] as? Int ?? 5432
 
 	} else {
 		print("Unable to get Configuration")

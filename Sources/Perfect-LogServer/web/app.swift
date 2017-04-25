@@ -9,7 +9,6 @@
 import SwiftMoment
 import PerfectHTTP
 import PerfectTurnstilePostgreSQL
-import TurnstileCrypto
 
 
 /*
@@ -42,53 +41,6 @@ extension WebHandlers {
 
 		response.render(template: "index", context: context)
 	}
-
-
-//	static func appMod(request: HTTPRequest, _ response: HTTPResponse) {
-//
-//		let contextAccountID = request.user.authDetails?.account.uniqueID ?? ""
-//		let contextAuthenticated = request.user.authenticated
-//		if !contextAuthenticated { response.redirect(path: "/login") }
-//
-//		let app = Application()
-//		if let name = request.param(name: "name"), !name.isEmpty {
-//			// UPDATE
-//			if let appuuid = request.param(name: "appuuid"), !appuuid.isEmpty {
-//				do {
-//					var findCriteria = [(String,Any)]()
-//					findCriteria.append(("accountid",contextAccountID))
-//					findCriteria.append(("appuuid",appuuid))
-//
-//					try app.find(findCriteria)
-//
-//					app.name = name
-//					try app.save()
-//				} catch {
-//					print("Save app: \(error)")
-//				}
-//			} else {
-//				// NEW
-//				let _ = app.newApplication(account: contextAccountID, appName: name)
-//			}
-//		}
-//
-//
-//		let apps = Application.listApps(account: contextAccountID)
-//
-//		var context: [String : Any] = [
-//			"accountID": contextAccountID,
-//			"authenticated": contextAuthenticated,
-//			"applist?":"true",
-//			"apps": apps
-//		]
-//		if contextAuthenticated {
-//			for i in WebHandlers.extras() {
-//				context[i.0] = i.1
-//			}
-//		}
-//
-//		response.render(template: "index", context: context)
-//	}
 
 
 

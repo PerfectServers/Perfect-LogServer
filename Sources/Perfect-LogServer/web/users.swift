@@ -10,8 +10,8 @@
 import SwiftMoment
 import PerfectHTTP
 import PerfectTurnstilePostgreSQL
-import TurnstileCrypto
 import PerfectLogger
+import TurnstileCrypto
 
 /*
 r.add(method: .get, uri: "/apps", handler: WebHandlers.appList)
