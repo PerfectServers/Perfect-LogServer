@@ -32,7 +32,7 @@ $(document).ready(function() {
 			dataType: "json"
 		})
 		.done(function(d){
-			console.log(d);
+			chartData = [];
 			d["d"].map(function(obj){
 				chartData.push({
 					date: obj.x,

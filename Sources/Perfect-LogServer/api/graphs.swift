@@ -82,7 +82,12 @@ func logGetGraphData(request: HTTPRequest, _ response: HTTPResponse) {
 		let t = LogData()
 
 		do {
-			let results = try t.sqlRows("SELECT to_char((to_timestamp(dategenerated/1000)::date),'YYYY-MM-DD') as ymd, COUNT(*) AS counter FROM logs WHERE \(whereclause) GROUP BY 1 ORDER BY 1 ASC", params: params)
+			var grouping = "YYYY-MM-DD"
+			if obj.interval == .month {
+				grouping = "YYYY-MM"
+			}
+
+			let results = try t.sqlRows("SELECT to_char((to_timestamp(dategenerated/1000)::date),'\(grouping)') as ymd, COUNT(*) AS counter FROM logs WHERE \(whereclause) GROUP BY 1 ORDER BY 1 ASC", params: params)
 
 			var resultArray = [[String: Any]]()
 
