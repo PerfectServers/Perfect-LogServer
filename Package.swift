@@ -1,5 +1,5 @@
 // Generated automatically by Perfect Assistant Application
-// Date: 2017-04-25 19:38:47 +0000
+// Date: 2017-04-26 19:57:45 +0000
 import PackageDescription
 let package = Package(
 	name: "Perfect-LogServer",

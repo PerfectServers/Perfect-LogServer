@@ -64,6 +64,7 @@ var authenticationConfig = AuthenticationConfig()
 authenticationConfig.include("/admin/*")
 authenticationConfig.exclude("/admin/login")
 authenticationConfig.exclude("/admin/register")
+authenticationConfig.exclude("/api/v1/graph")
 
 
 let authFilter = AuthFilter(authenticationConfig)

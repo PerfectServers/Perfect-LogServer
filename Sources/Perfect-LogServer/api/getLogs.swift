@@ -99,3 +99,4 @@ func logGetLog(request: HTTPRequest, _ response: HTTPResponse) {
 	response.completed()
 
 }
+

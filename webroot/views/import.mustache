@@ -1,0 +1,120 @@
+{{>header}}
+<div class="row" style="margin-top: 100px;">
+<div class="col three first">{{>left}}</div>
+<div class="col thirteen last">
+
+{{^authenticated}}
+{{>components/login}}
+{{/authenticated}}
+
+{{#authenticated}}
+
+
+<h2 class="dmb">Import</h2>
+
+<form action="?" method="POST" id="appform">
+<input type="hidden" name="token" id="token" value="{{token}}">
+
+<div class="row mt">
+<div class="col two first"><label>Token:</label></div>
+<div class="col six">
+<select name="gettoken">
+{{#tokenlist}}<option value="{{token}}">{{name}} ({{token}})</option>{{/tokenlist}}
+</select>
+</div>
+</div>
+
+<div class="row mt">
+<div class="col two first"><label>Application:</label></div>
+<div class="col six">
+<select name="getapp">
+{{#applist}}<option value="{{appuuid}}">{{name}} ({{appuuid}})</option>{{/applist}}
+</select>
+</div>
+</div>
+
+<div class="row mt">
+<div class="col two first"><label>Log Level:</label></div>
+<div class="col six">
+<select name="getloglevel">
+<option value="critical">Critical</option>
+<option value="error">Error</option>
+<option value="warn">Warn</option>
+<option value="info" selected="selected">Info</option>
+<option value="debug">Debug</option>
+</select>
+</div>
+</div>
+
+
+<div class="row mt">
+<div class="col thirteen first"><h4>First Param is always the event date.</h4></div>
+</div>
+
+
+<div class="row mt">
+<div class="col two first"><label>Data Param 1</label></div>
+<div class="col three">
+<input type="text" name="param1_n" value="">
+</div>
+<div class="col one"><label>Ignore if:</label></div>
+<div class="col three">
+<input type="text" name="param1_i" value="">
+</div>
+
+</div>
+
+<div class="row mt">
+<div class="col two first"><label>Data Param 2</label></div>
+<div class="col three">
+<input type="text" name="param2_n" value="">
+</div>
+<div class="col one"><label>Ignore if:</label></div>
+<div class="col three">
+<input type="text" name="param2_i" value="">
+</div>
+
+</div>
+
+<div class="row mt">
+<div class="col two first"><label>Data Param 3</label></div>
+<div class="col three">
+<input type="text" name="param3_n" value="">
+</div>
+<div class="col one"><label>Ignore if:</label></div>
+<div class="col three">
+<input type="text" name="param3_i" value="">
+</div>
+
+</div>
+
+
+<div class="row mt">
+<div class="col two first"><label>Data</label></div>
+<div class="col thirteen">
+<textarea name="importdata"></textarea>
+</div>
+</div>
+
+
+
+<div class="row mt">
+<div class="col nine push_two">
+
+<button type="submit" class="dmt">Start Import</button>
+<a href="/import" class="button">Cancel</a>
+</div>
+</div>
+</form>
+
+<script>
+var headerToken = "{{token}}";
+</script>
+<script src="/assets/js/graphing.js" type="text/javascript" />
+
+{{/authenticated}}
+
+
+</div>
+</div>
+{{>footer}}

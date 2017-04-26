@@ -19,6 +19,9 @@ func apiRoutes() -> Routes {
 	r.add(method: .get, uri: "/api/v1/get/log/{token}", handler: logGetLog)
 	r.add(method: .post, uri: "/api/v1/get/log", handler: logGetLog)
 
+
+	r.add(method: .post, uri: "/api/v1/graph", handler: logGetGraphData)
+
 	return r
 }
 

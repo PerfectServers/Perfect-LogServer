@@ -1,0 +1,155 @@
+{{>header}}
+
+<script src="/assets/js/amcharts/amcharts.js" type="text/javascript"></script>
+<script src="/assets/js/moment.min.js" type="text/javascript"></script>
+<script src="/assets/js/amcharts/serial.js" type="text/javascript"></script>
+
+
+
+
+<div class="row" style="margin-top: 100px;">
+<div class="col three first">{{>left}}</div>
+<div class="col thirteen last">
+
+{{^authenticated}}
+{{>components/login}}
+{{/authenticated}}
+
+{{#authenticated}}
+
+
+<h2 class="dmb">Graphing</h2>
+
+<form action="?" method="POST" id="appform" onSubmit="return false">
+<input type="hidden" name="token" id="token" value="{{token}}">
+
+<div class="row">
+<div class="col two first"><label>Name:</label></div>
+<div class="col six" id="graphName">Unspecified</div>
+</div>
+
+<div class="row mt">
+<div class="col two first"><label>Token:</label></div>
+<div class="col six">
+<select id="gettoken">
+{{#tokenlist}}<option value="{{token}}">{{name}} ({{token}})</option>{{/tokenlist}}
+</select>
+</div>
+</div>
+
+<div class="row mt">
+<div class="col two first"><label>Log Level:</label></div>
+<div class="col six">
+<select id="getloglevel">
+<option value="all" selected="selected">All</option>
+<option value="critical">Critical</option>
+<option value="error">Error</option>
+<option value="warn">Warn</option>
+<option value="info">Info</option>
+<option value="debug">Debug</option>
+</select>
+</div>
+</div>
+
+<div class="row mt">
+<div class="col two first"><label>Interval:</label></div>
+<div class="col six">
+<select id="getinterval">
+<option value="d" selected="selected">Day</option>
+<option value="m">Month</option>
+<option value="y">Year</option>
+</select>
+</div>
+</div>
+
+
+
+<div class="row mt">
+<div class="col two first"><label>Params:</label></div>
+<div class="col three">
+<input type="text" id="param1_n" value="">
+</div>
+<div class="col six">
+<input type="text" id="param1_v" value="">
+</div>
+</div>
+
+<div class="row mt">
+<div class="col three push_two">
+<input class="ml" type="text" id="param2_n" value="">
+</div>
+<div class="col six">
+<input class="ml" type="text" id="param2_v" value="">
+</div>
+</div>
+
+<div class="row mt">
+<div class="col three push_two">
+<input class="ml" type="text" id="param3_n" value="">
+</div>
+<div class="col six">
+<input class="ml" type="text" id="param3_v" value="">
+</div>
+</div>
+
+
+<div class="row mt">
+<div class="col nine push_two">
+
+<a href="#" id="makeGraph" class="button ml">Graph</a>
+<a href="#" id="saveGraph" class="button">Save</a>
+<a href="/graphs" class="button">Cancel</a>
+</div>
+</div>
+</form>
+
+<script>
+	var headerToken = "{{token}}";
+</script>
+<script src="/assets/js/graphing.js" type="text/javascript"></script>
+
+
+
+<style>
+
+.axis path,
+.axis line {
+fill: none;
+stroke: #000;
+shape-rendering: crispEdges;
+}
+
+.x.axis path {
+display: none;
+}
+
+.line {
+fill: none;
+stroke: steelblue;
+stroke-width: 1.5px;
+}
+.content {
+padding: 20px;
+}
+.header {
+width: 100%;
+background-color: #EEE;
+}
+
+</style>
+
+
+
+<div id="chartdiv" style="width: 100%; height: 400px;"></div>
+<div style="padding: 35px;">
+<label><input type="radio" name="group" id="rb1" onclick="setPanSelect()"> Select<label>
+<label style="margin-left: 20px"><input type="radio" checked="true" name="group" id="rb2" onclick="setPanSelect()"> Pan</label>
+</div>
+
+
+{{/authenticated}}
+
+
+</div>
+</div>
+{{>footer}}

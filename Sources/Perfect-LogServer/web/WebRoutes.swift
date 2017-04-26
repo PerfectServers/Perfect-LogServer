@@ -44,6 +44,11 @@ func webRoutes() -> Routes {
 	r.add(method: .delete, uri: "/users/{id}/delete", handler: WebHandlers.userDelete)
 	///users/qPStyRuhvw55aVajR5t6Xg/delete
 
+	r.add(method: .get, uri: "/graphs", handler: WebHandlers.graphs)
+	r.add(method: .get, uri: "/import", handler: WebHandlers.importData)
+	r.add(method: .post, uri: "/import", handler: WebHandlers.importDataProcessing)
+
+
 	r.add(method: .get, uri: "/docs", handler: WebHandlers.docs)
 	return r
 }
