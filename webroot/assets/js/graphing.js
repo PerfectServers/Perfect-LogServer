@@ -2,15 +2,18 @@ var chart;
 var chartData = [];
 var chartCursor;
 var graphOptions = {};
+var graphCounter = 0;
 
 $(document).ready(function() {
 	$("#makeGraph").on("click", function() {
+		$("#chartgroup").html("");
 		assembleData(function() {
 			getData()
 		});
 		return false;
 	});
 	$("#saveGraph").on("click", function() {
+		$("#chartgroup").html("");
 		assembleData(function() {
 			saveData()
 		});
@@ -22,6 +25,7 @@ $(document).ready(function() {
 			return;
 		}
 	
+		$("#chartgroup").html("");
 		$.ajax({
 			type: "GET",
 			url: "/api/v1/graph/load/" + graphID,
@@ -32,7 +36,7 @@ $(document).ready(function() {
 			dataType: "json"
 			})
 		.done(function(d) {
-			//console.log(d)
+			console.log(d)
 			
 			// set opts
 			$("#gettoken").val(d["config"]["token"]);
@@ -51,7 +55,17 @@ $(document).ready(function() {
 					y: Number(obj.y)
 				});
 			});
-		makeChartNow();
+			makeChartNow("column");
+			
+			chartData = [];
+			d["cumulative "+d["config"]["ref"]].map(function(obj) {
+				chartData.push({
+					date: obj.x,
+					y: Number(obj.y)
+				});
+			});
+			makeChartNow("line");
+			
 		});
 	});
 });
@@ -67,6 +81,7 @@ function getData() {
 		dataType: "json"
 	})
 	.done(function(d) {
+//		console.log(d)
 		chartData = [];
 		d["d"].map(function(obj) {
 			chartData.push({
@@ -74,7 +89,19 @@ function getData() {
 				y: Number(obj.y)
 			});
 		});
-		makeChartNow();
+		makeChartNow("column");
+
+		// CUMULATIVE
+		chartData = [];
+		d["cumulative d"].map(function(obj) {
+			chartData.push({
+				date: obj.x,
+				y: Number(obj.y)
+			});
+		});
+		makeChartNow("line");
+
+
 	});
 }
 
@@ -120,9 +147,6 @@ function assembleData(func) {
 		graphOptions.d.params[$("#param3_n").val()] = $("#param3_v").val()
 	}
 	
-	console.log("done1")
-	console.log(graphOptions);
-	console.log("done2");
 	func();
 }
 
@@ -146,12 +170,13 @@ function setPanSelect() {
 	chart.validateNow();
 }
 
-function makeChartNow() {
+function makeChartNow(graphType) {
 	// SERIAL CHART
 	chart = new AmCharts.AmSerialChart();
 	chart.dataProvider = chartData;
 	chart.categoryField = "date";
 	chart.balloon.bulletSize = 5;
+
 
 	// listen for "dataUpdated" event (fired when chart is rendered) and call zoomChart method when it happens
 	chart.addListener("dataUpdated", zoomChart);
@@ -206,14 +231,23 @@ function makeChartNow() {
 
 	// GRAPH
 	var graph = new AmCharts.AmGraph();
-	graph.title = "Perfect Stars";
+	graph.type = graphType;
+	graph.title = "Perfect LogServer Graph";
 	graph.valueField = "y";
 	graph.bullet = "round";
 	graph.bulletBorderColor = "#FFFFFF";
 	graph.bulletBorderThickness = 2;
 	graph.bulletBorderAlpha = 1;
-	graph.lineThickness = 2;
-	graph.lineColor = "#FFBB00";
+	
+	if(graphType == "line") {
+		graph.lineThickness = 2;
+		graph.lineColor = "#FFBB00";
+	} else {
+		graph.lineThickness = 0;
+		graph.lineColor = "#FFF";
+		graph.fillColors = "#FFBB00";
+		graph.fillAlphas = 1;
+	}
 	graph.hideBulletsCount = 50; // this makes the chart to hide bullets when there are more than 50 series in selection
 	chart.addGraph(graph);
 
@@ -229,6 +263,8 @@ function makeChartNow() {
 	chart.creditsPosition = "bottom-right";
 	
 	// WRITE
-	chart.write("chartdiv");
-	$(".chartops").show();
+	graphCounter += 1;
+	$("#chartgroup").append('<div id="chartdiv'+graphCounter+'" style="width: 100%; height: 400px;"></div>');
+	chart.write("chartdiv"+graphCounter);
+//	$(".chartops").show();
 }

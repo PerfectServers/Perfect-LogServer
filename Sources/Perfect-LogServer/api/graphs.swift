@@ -56,8 +56,9 @@ class GraphDataProcess {
 
 	}
 
-	static func getGraphData(_ obj: Graph) -> [[String: Any]]{
+	static func getGraphData(_ obj: Graph) -> [[String: Any]] {
 		var resultArray = [[String: Any]]()
+
 		var whereclause = "token = $1"
 		let params = [obj.token]
 		obj.params.forEach{
@@ -81,9 +82,9 @@ class GraphDataProcess {
 
 				r["x"] = "\(row.data["ymd"] as! String)"
 				r["y"] = row.data["counter"] as? Int ?? 0
+
 				resultArray.append(r)
 			}
-			//		resultArray.reverse()
 
 
 		} catch {
@@ -92,6 +93,22 @@ class GraphDataProcess {
 		return resultArray
 	}
 
+	static func makeCumulativeArray(_ data:[[String:Any]]) -> [[String: Any]] {
+		var resultArray = [[String: Any]]()
+		var cumulativeCount = 0
+
+		for datapoint in data {
+			var r = [String: Any]()
+			if datapoint["y"] is Int {
+				cumulativeCount = cumulativeCount + (datapoint["y"] as? Int ?? 0)
+			}
+			r["x"] = datapoint["x"]
+			r["y"] = cumulativeCount
+			resultArray.append(r)
+
+		}
+		return resultArray
+	}
 
 	static func logLoadGraphData(request: HTTPRequest, _ response: HTTPResponse) {
 		response.setHeader(.contentType, value: "application/json")
@@ -106,7 +123,9 @@ class GraphDataProcess {
 				try thisGraph.get(id)
 				let g = thisGraph.toGraph()
 				resp["config"] = ["ref": thisGraph.ref, "token":thisGraph.token, "interval": thisGraph.interval, "params": thisGraph.params]
-				resp[thisGraph.ref] = GraphDataProcess.getGraphData(g)
+				let gg = GraphDataProcess.getGraphData(g)
+				resp[thisGraph.ref] = gg
+				resp["cumulative \(thisGraph.ref)"] = GraphDataProcess.makeCumulativeArray(gg)
 
 				try response.setBody(json: resp)
 			} catch {
@@ -141,7 +160,9 @@ class GraphDataProcess {
 				let graphData = try fromString(body)
 				graphData.forEach{
 					obj in
-					resp[obj.ref] = GraphDataProcess.getGraphData(obj)
+					let gg = GraphDataProcess.getGraphData(obj)
+					resp[obj.ref] = gg
+					resp["cumulative \(obj.ref)"] = GraphDataProcess.makeCumulativeArray(gg)
 				}
 			} catch {
 				badRequest(request, response, msg: "Invalid data")
