@@ -65,13 +65,16 @@ class Application: PostgresStORM {
 
 
 
-	static func listApps(account: String) -> [[String: Any]] {
+	static func listApps(account: String = "") -> [[String: Any]] {
 		var apps = [[String: Any]]()
 		let t = Application()
 		var findCriteria = [(String,Any)]()
-		findCriteria.append(("accountid",account))
-		try? t.find(findCriteria)
-
+		if account.isEmpty {
+			try? t.findAll()
+		} else {
+			findCriteria.append(("accountid",account))
+			try? t.find(findCriteria)
+		}
 
 		for row in t.rows() {
 			var r = [String: Any]()

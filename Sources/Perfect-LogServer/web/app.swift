@@ -25,7 +25,8 @@ extension WebHandlers {
 		let contextAuthenticated = request.user.authenticated
 		if !contextAuthenticated { response.redirect(path: "/login") }
 
-		let apps = Application.listApps(account: contextAccountID)
+//		let apps = Application.listApps(account: contextAccountID)
+		let apps = Application.listApps()
 
 		var context: [String : Any] = [
 			"accountID": contextAccountID,
@@ -195,7 +196,8 @@ extension WebHandlers {
 		}
 
 
-		let apps = Application.listApps(account: contextAccountID)
+//		let apps = Application.listApps(account: contextAccountID)
+		let apps = Application.listApps()
 
 		var context: [String : Any] = [
 			"accountID": contextAccountID,

@@ -91,12 +91,14 @@ class WebHandlers {
 		let contextAccountID = request.user.authDetails?.account.uniqueID ?? ""
 		let contextAuthenticated = request.user.authenticated
 
-		let tokens = AppToken.listTokens(account: contextAccountID)
+		let tokens = AppToken.listTokens()
+		let graphs = GraphSave.listGraphs()
 
 		var context: [String : Any] = [
 			"accountID": contextAccountID,
 			"authenticated": contextAuthenticated,
 			"tokenlist": tokens,
+			"graphconfigs": graphs,
 			"token": request.user.authDetails?.sessionID ?? ""
 		]
 		if contextAuthenticated {
@@ -113,8 +115,10 @@ class WebHandlers {
 		let contextAccountID = request.user.authDetails?.account.uniqueID ?? ""
 		let contextAuthenticated = request.user.authenticated
 
-		let tokens = AppToken.listTokens(account: contextAccountID)
-		let apps = Application.listApps(account: contextAccountID)
+//		let tokens = AppToken.listTokens(account: contextAccountID)
+		let tokens = AppToken.listTokens()
+//		let apps = Application.listApps(account: contextAccountID)
+		let apps = Application.listApps()
 
 		var context: [String : Any] = [
 			"accountID": contextAccountID,
@@ -230,8 +234,10 @@ class WebHandlers {
 
 
 
-		let tokens = AppToken.listTokens(account: contextAccountID)
-		let apps = Application.listApps(account: contextAccountID)
+//		let tokens = AppToken.listTokens(account: contextAccountID)
+		let tokens = AppToken.listTokens()
+//		let apps = Application.listApps(account: contextAccountID)
+		let apps = Application.listApps()
 
 		var context: [String : Any] = [
 			"accountID": contextAccountID,

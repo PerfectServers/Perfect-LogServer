@@ -73,13 +73,16 @@ class AppToken: PostgresStORM {
 		return tokenMap
 	}
 
-	static func listTokens(account: String) -> [[String: Any]] {
+	static func listTokens(account: String = "") -> [[String: Any]] {
 		var tokens = [[String: Any]]()
 		let t = AppToken()
 		var findCriteria = [(String,Any)]()
-		findCriteria.append(("accountid",account))
-		try? t.find(findCriteria)
-
+		if account.isEmpty {
+			try? t.findAll()
+		} else {
+			findCriteria.append(("accountid",account))
+			try? t.find(findCriteria)
+		}
 
 		for row in t.rows() {
 			var r = [String: Any]()

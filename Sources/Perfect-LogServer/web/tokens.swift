@@ -19,7 +19,8 @@ extension WebHandlers {
 		let contextAuthenticated = request.user.authenticated
 		if !contextAuthenticated { response.redirect(path: "/login") }
 
-		let tokens = AppToken.listTokens(account: contextAccountID)
+//		let tokens = AppToken.listTokens(account: contextAccountID)
+		let tokens = AppToken.listTokens()
 
 
 		var context: [String : Any] = [
@@ -148,7 +149,8 @@ extension WebHandlers {
 		}
 
 
-		let tokens = AppToken.listTokens(account: contextAccountID)
+//		let tokens = AppToken.listTokens(account: contextAccountID)
+		let tokens = AppToken.listTokens()
 
 		var context: [String : Any] = [
 			"accountID": contextAccountID,

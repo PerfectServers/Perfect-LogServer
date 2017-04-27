@@ -1,59 +1,137 @@
 var chart;
 var chartData = [];
 var chartCursor;
-
-
+var graphOptions = {};
 
 $(document).ready(function() {
-	$("#makeGraph").on("click",function(){
-		var data = {};
-		data.d = {};
-		data.d.token = $("#gettoken").val();
-		data.d.loglevel = $("#getloglevel").val();
-		data.d.interval = $("#getinterval").val();
-		data.d.params = {};
-		if($("#param1_n").val().length > 0 && $("#param1_v").val().length > 0) {
-			data.d.params[$("#param1_n").val()] = $("#param1_v").val()
+	$("#makeGraph").on("click", function() {
+		assembleData(function() {
+			getData()
+		});
+		return false;
+	});
+	$("#saveGraph").on("click", function() {
+		assembleData(function() {
+			saveData()
+		});
+		return false;
+	});
+	$("#getgrapgconfig").on("change", function() {
+		var graphID = Number($("#getgrapgconfig").val());
+		if (graphID == 0) {
+			return;
 		}
-		if($("#param2_n").val().length > 0 && $("#param2_v").val().length > 0) {
-			data.d.params[$("#param2_n").val()] = $("#param2_v").val()
-		}
-		if($("#param3_n").val().length > 0 && $("#param3_v").val().length > 0) {
-			data.d.params[$("#param3_n").val()] = $("#param3_v").val()
-		}
-// 		console.log(data);
-		
+	
 		$.ajax({
-			type: "POST",
-			url: "/api/v1/graph",
-			headers:{"Authorization":"Bearer "+headerToken},
-			data: JSON.stringify(data),
+			type: "GET",
+			url: "/api/v1/graph/load/" + graphID,
+			headers: {
+				"Authorization": "Bearer " + headerToken
+			},
 			contentType: "application/json",
 			dataType: "json"
-		})
-		.done(function(d){
+			})
+		.done(function(d) {
+			//console.log(d)
+			
+			// set opts
+			$("#gettoken").val(d["config"]["token"]);
+			$("#getinterval").val(d["config"]["interval"]);
+			var counter = 0;
+			Object.keys(d["config"]["params"]).forEach(key => {
+				counter += 1;
+				$("#param"+counter+"_n").val(key);
+				$("#param"+counter+"_v").val(d["config"]["params"][key]);
+			});
+			
 			chartData = [];
-			d["d"].map(function(obj){
+			d[d["config"]["ref"]].map(function(obj) {
 				chartData.push({
 					date: obj.x,
 					y: Number(obj.y)
 				});
 			});
-			makeChartNow();
+		makeChartNow();
 		});
-	
-		return false;
-	});
-	$("#saveGraph").on("click",function(){
-		return false;
 	});
 });
+function getData() {
+	$.ajax({
+		type: "POST",
+		url: "/api/v1/graph",
+		headers: {
+			"Authorization": "Bearer " + headerToken
+		},
+		data: JSON.stringify(graphOptions),
+		contentType: "application/json",
+		dataType: "json"
+	})
+	.done(function(d) {
+		chartData = [];
+		d["d"].map(function(obj) {
+			chartData.push({
+				date: obj.x,
+				y: Number(obj.y)
+			});
+		});
+		makeChartNow();
+	});
+}
+
+function saveData() {
+	var name = prompt("Please enter a name for this Graph Configuration", "");
+	if (name != null) {
+		graphOptions.d.ref = name;
+		$.ajax({
+			type: "POST",
+			url: "/api/v1/graph/save",
+			headers: {
+				"Authorization": "Bearer " + headerToken
+			},
+			data: JSON.stringify(graphOptions),
+			contentType: "application/json",
+			dataType: "json"
+		})
+		.done(function(d) {
+			alert("Graph configuration saved.");
+		});
+	}
+}
+
+function assembleData(func) {
+	graphOptions = {};
+	
+	graphOptions.d = {};
+	
+	graphOptions.d.token = $("#gettoken").val();
+	graphOptions.d.loglevel = $("#getloglevel").val();
+	graphOptions.d.interval = $("#getinterval").val();
+	graphOptions.d.params = {};
+	
+	if ($("#param1_n").val().length > 0 && $("#param1_v").val().length > 0) {
+		graphOptions.d.params[$("#param1_n").val()] = $("#param1_v").val()
+	}
+	
+	if ($("#param2_n").val().length > 0 && $("#param2_v").val().length > 0) {
+		graphOptions.d.params[$("#param2_n").val()] = $("#param2_v").val()
+	}
+	
+	if ($("#param3_n").val().length > 0 && $("#param3_v").val().length > 0) {
+		graphOptions.d.params[$("#param3_n").val()] = $("#param3_v").val()
+	}
+	
+	console.log("done1")
+	console.log(graphOptions);
+	console.log("done2");
+	func();
+}
+
 
 // this method is called when chart is first inited as we listen for "dataUpdated" event
 function zoomChart() {
-	// different zoom methods can be used - zoomToIndexes, zoomToDates, zoomToCategoryValues
-//	chart.zoomToIndexes(chartData.length - 40, chartData.length - 1);
-	chart.zoomToIndexes(0, chartData.length);
+		// different zoom methods can be used - zoomToIndexes, zoomToDates, zoomToCategoryValues
+	//	chart.zoomToIndexes(chartData.length - 40, chartData.length - 1);
+		chart.zoomToIndexes(0, chartData.length);
 }
 
 // changes cursor mode from pan to select
@@ -64,12 +142,13 @@ function setPanSelect() {
 	} else {
 		chartCursor.pan = true;
 	}
+	
 	chart.validateNow();
 }
+
 function makeChartNow() {
 	// SERIAL CHART
 	chart = new AmCharts.AmSerialChart();
-
 	chart.dataProvider = chartData;
 	chart.categoryField = "date";
 	chart.balloon.bulletSize = 5;
@@ -86,31 +165,37 @@ function makeChartNow() {
 	categoryAxis.minorGridEnabled = true;
 	categoryAxis.twoLineMode = true;
 	categoryAxis.dateFormats = [{
-								period: 'fff',
-								format: 'JJ:NN:SS'
-								}, {
-								period: 'ss',
-								format: 'JJ:NN:SS'
-								}, {
-								period: 'mm',
-								format: 'JJ:NN'
-								}, {
-								period: 'hh',
-								format: 'JJ:NN'
-								}, {
-								period: 'DD',
-								format: 'DD'
-								}, {
-								period: 'WW',
-								format: 'DD'
-								}, {
-								period: 'MM',
-								format: 'MMM'
-								}, {
-								period: 'YYYY',
-								format: 'YYYY'
-								}];
-
+		period: 'fff',
+		format: 'JJ:NN:SS'
+		},
+		{
+			period: 'ss',
+			format: 'JJ:NN:SS'
+		},
+		{
+			period: 'mm',
+			format: 'JJ:NN'
+		},
+		{
+			period: 'hh',
+			format: 'JJ:NN'
+		},
+		{
+			period: 'DD',
+			format: 'DD'
+		},
+		{
+			period: 'WW',
+			format: 'DD'
+		},
+		{
+			period: 'MM',
+			format: 'MMM'
+		},
+		{
+			period: 'YYYY',
+			format: 'YYYY'
+		}];
 	categoryAxis.axisColor = "#DADADA";
 
 	// value
@@ -141,10 +226,9 @@ function makeChartNow() {
 	// SCROLLBAR
 	var chartScrollbar = new AmCharts.ChartScrollbar();
 	chart.addChartScrollbar(chartScrollbar);
-
 	chart.creditsPosition = "bottom-right";
 	
 	// WRITE
 	chart.write("chartdiv");
-	
+	$(".chartops").show();
 }

@@ -20,7 +20,9 @@ func apiRoutes() -> Routes {
 	r.add(method: .post, uri: "/api/v1/get/log", handler: logGetLog)
 
 
-	r.add(method: .post, uri: "/api/v1/graph", handler: logGetGraphData)
+	r.add(method: .post, uri: "/api/v1/graph", handler: GraphDataProcess.logGetGraphData)
+	r.add(method: .post, uri: "/api/v1/graph/save", handler: GraphDataProcess.logSaveGraphData)
+	r.add(method: .get, uri: "/api/v1/graph/load/{id}", handler: GraphDataProcess.logLoadGraphData)
 
 	return r
 }
@@ -28,7 +30,7 @@ func apiRoutes() -> Routes {
 
 
 
-// Generif "Check" function for health check.
+// Generic "Check" function for health check.
 func checkme(request: HTTPRequest, _ response: HTTPResponse) {
 	response.setHeader(.contentType, value: "application/json")
 	do {
