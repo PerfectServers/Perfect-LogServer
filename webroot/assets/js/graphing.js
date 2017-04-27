@@ -35,9 +35,7 @@ $(document).ready(function() {
 			contentType: "application/json",
 			dataType: "json"
 			})
-		.done(function(d) {
-			console.log(d)
-			
+		.done(function(d) {			
 			// set opts
 			$("#gettoken").val(d["config"]["token"]);
 			$("#getinterval").val(d["config"]["interval"]);
