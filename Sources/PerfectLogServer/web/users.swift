@@ -72,6 +72,18 @@ extension WebHandlers {
 				"email": user.email,
 				"uniqueid": user.id
 			]
+
+			switch user.usertype {
+			case .standard:
+				context["usertypestandard"] = " selected=\"selected\""
+			case .admin:
+				context["usertypeadmin"] = " selected=\"selected\""
+			case .inactive:
+				context["usertypeinactive"] = " selected=\"selected\""
+			default:
+				context["usertypeprovisional"] = " selected=\"selected\""
+			}
+
 			if contextAuthenticated {
 				for i in WebHandlers.extras(request) {
 					context[i.0] = i.1
@@ -114,6 +126,17 @@ extension WebHandlers {
 
 				if let pwd = request.param(name: "pw"), !pwd.isEmpty {
 					user.makePassword(pwd)
+				}
+
+				switch request.param(name: "usertype") ?? "" {
+				case "standard":
+					user.usertype = .standard
+				case "admin":
+					user.usertype = .admin
+				case "inactive":
+					user.usertype = .inactive
+				default:
+					user.usertype = .provisional
 				}
 
 				if user.id.isEmpty {
