@@ -57,7 +57,7 @@ let additionalOpts = additionalInitializeSchema(fname)
 
 // Configuration of Session
 SessionConfig.name = "LogServer"
-SessionConfig.idle = 3600
+SessionConfig.idle = 86400
 SessionConfig.cookieDomain = additionalOpts["domain"] as? String ?? domain
 SessionConfig.IPAddressLock = false
 SessionConfig.userAgentLock = false
