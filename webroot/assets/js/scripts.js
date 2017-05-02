@@ -297,6 +297,11 @@ $(document).ready(function() {
 
 amp.makeRequest = function(req, dest) {
 	$.ajax({
+		   beforeSend: function(request) {
+			request.setRequestHeader("Authorization", "Bearer "+headerToken);
+			request.setRequestHeader("x-csrf-token", csrf);
+			request.setRequestHeader("Content-Type", "application/json");
+		   },
 		   method: 'POST',
 		   url: req,
 		   data: {}
@@ -324,10 +329,12 @@ amp.openList = function() {
 
 
 
-amp.loadLog = function(filter, sessionid) {
+amp.loadLog = function(filter, sessionid, csrf) {
 	$.ajax({
 		beforeSend: function(request) {
-			request.setRequestHeader("Authorization", "Bearer "+sessionid);
+		   request.setRequestHeader("Authorization", "Bearer "+sessionid);
+		   request.setRequestHeader("x-csrf-token", csrf);
+		   request.setRequestHeader("Content-Type", "application/json");
 		},
 		method: 'POST',
 		url: "/api/v1/get/log/",
@@ -365,12 +372,12 @@ amp.loadLog = function(filter, sessionid) {
 		$('.eventid').on('click', function(event){
 			event.preventDefault();
 			filter.eventid = $(this).attr('data');
-			amp.loadLog(filter,sessionid);
+			amp.loadLog(filter,sessionid, csrf);
 		});
 		$('.appid').on('click', function(event){
 			event.preventDefault();
 			filter.appid = $(this).attr('data');
-			amp.loadLog(filter,sessionid);
+			amp.loadLog(filter,sessionid, csrf);
 		});
 		$('.nodisplay').on('click', function(event){
 			event.preventDefault();
@@ -381,7 +388,7 @@ amp.loadLog = function(filter, sessionid) {
 		$('.filterprop').on('click', function(){
 			filter.prop = $(this).attr('data');
 			filter.propdata = encodeURI($(this).siblings('.propdata').text());
-			amp.loadLog(filter,sessionid);
+			amp.loadLog(filter,sessionid, csrf);
 		});
 
 	});

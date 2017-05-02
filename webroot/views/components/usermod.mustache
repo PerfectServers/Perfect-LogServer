@@ -4,7 +4,8 @@
 	{{msg}}
 
 	<form action="?" method="POST" id="userform">
-		<input type="hidden" name="uniqueid" id="uniqueid" value="{{uniqueid}}" >
+		<input type="hidden" name="uniqueid" id="uniqueid" value="{{id}}" >
+		<input type="hidden" name="_csrf" value="{{csrfToken}}">
 		<div class="row">
 
 			<div class="col six first">
@@ -67,7 +68,6 @@
 <script>
 $("#userform").validate({
 	rules: {
-		pw: "required",
 		pw2: {
 			equalTo: "#pw1"
 		}

@@ -1,8 +1,0 @@
-{
-	"postgresdbname": "logserver",
-	"postgreshost": "localhost",
-	"postgresport": 5432,
-	"postgrespwd": "perfect",
-	"postgresuser": "perfect",
-	"httpport": 8181
-}

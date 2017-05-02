@@ -80,7 +80,7 @@ class LogData: PostgresStORM {
 		// later when stable, make using map
 		for i in 0..<counter {
 			let t = rowsfound?[i].data["token"] as? String ?? ""
-			res.append(["token":t, "tokenName": tokenMap[t]!])
+			res.append(["token":t, "tokenName": tokenMap[t] ?? ""])
 		}
 		return res
 	}

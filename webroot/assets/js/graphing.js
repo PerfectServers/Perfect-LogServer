@@ -27,11 +27,16 @@ $(document).ready(function() {
 	
 		$("#chartgroup").html("");
 		$.ajax({
+			beforeSend: function(request) {
+			   request.setRequestHeader("Authorization", "Bearer "+headerToken);
+			   request.setRequestHeader("x-csrf-token", csrf);
+			   request.setRequestHeader("Content-Type", "application/json");
+			},
 			type: "GET",
 			url: "/api/v1/graph/load/" + graphID,
-			headers: {
-				"Authorization": "Bearer " + headerToken
-			},
+//			headers: {
+//				"Authorization": "Bearer " + headerToken
+//			},
 			contentType: "application/json",
 			dataType: "json"
 			})
@@ -69,11 +74,16 @@ $(document).ready(function() {
 });
 function getData() {
 	$.ajax({
+		beforeSend: function(request) {
+		   request.setRequestHeader("Authorization", "Bearer "+headerToken);
+		   request.setRequestHeader("x-csrf-token", csrf);
+		   request.setRequestHeader("Content-Type", "application/json");
+		},
 		type: "POST",
 		url: "/api/v1/graph",
-		headers: {
-			"Authorization": "Bearer " + headerToken
-		},
+//		headers: {
+//			"Authorization": "Bearer " + headerToken
+//		},
 		data: JSON.stringify(graphOptions),
 		contentType: "application/json",
 		dataType: "json"
@@ -108,11 +118,16 @@ function saveData() {
 	if (name != null) {
 		graphOptions.d.ref = name;
 		$.ajax({
+			beforeSend: function(request) {
+			   request.setRequestHeader("Authorization", "Bearer "+headerToken);
+			   request.setRequestHeader("x-csrf-token", csrf);
+			   request.setRequestHeader("Content-Type", "application/json");
+			},
 			type: "POST",
 			url: "/api/v1/graph/save",
-			headers: {
-				"Authorization": "Bearer " + headerToken
-			},
+//			headers: {
+//				"Authorization": "Bearer " + headerToken
+//			},
 			data: JSON.stringify(graphOptions),
 			contentType: "application/json",
 			dataType: "json"

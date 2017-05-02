@@ -22,6 +22,7 @@
 
 <form action="?" method="POST" id="appform" onSubmit="return false">
 <input type="hidden" name="token" id="token" value="{{token}}">
+<input type="hidden" name="_csrf" value="{{csrfToken}}">
 
 <div class="row">
 <div class="col two first"><label>Name:</label></div>
@@ -111,9 +112,6 @@
 </div>
 </form>
 
-<script>
-	var headerToken = "{{token}}";
-</script>
 <script src="/assets/js/graphing.js" type="text/javascript"></script>
 
 

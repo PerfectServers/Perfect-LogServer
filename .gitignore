@@ -75,3 +75,5 @@ perfect-logserver.service
 PADockerfile_build
 PADockerfile_deploy
 ApplicationConfigurationLinux.json
+log.log
+perfectlogserver.service

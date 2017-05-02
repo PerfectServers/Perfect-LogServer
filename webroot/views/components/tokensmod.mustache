@@ -5,7 +5,8 @@
 	<h3 class="mt">{{action}} Token</h3>
 
 	<form action="?" method="POST" id="appform">
-<input type="hidden" name="token" id="token" value="{{token}}">
+		<input type="hidden" name="token" id="token" value="{{token}}">
+		<input type="hidden" name="_csrf" value="{{csrfToken}}">
 
 		<div class="row">
 			<label class="mt hmb">Name:</label>

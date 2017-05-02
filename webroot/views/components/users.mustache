@@ -16,11 +16,11 @@
 	{{#users}}
 		<tr>
 			<td>{{username}}</td>
-			<td>{{firstname}} {{lastname}}</td>
+			<td>{{#detail}}{{firstname}} {{lastname}}{{/detail}}</td>
 			<td>{{email}}</td>
 			<td class="largericons">
-				<a href="/users/{{uniqueid}}/edit"><span class="icon-pencil"></span></a>
-				<a href="/users/{{uniqueid}}/delete" class="deleteaction" dest="/users"><span class="icon-trash"></span></a>
+				<a href="/users/{{id}}/edit"><span class="icon-pencil"></span></a>
+				<a href="/users/{{id}}/delete" class="deleteaction" dest="/users"><span class="icon-trash"></span></a>
 			</td>
 		</tr>
 	{{/users}}

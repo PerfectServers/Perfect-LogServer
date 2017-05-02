@@ -36,7 +36,7 @@
 $(document).ready(function() {
 	var filter = {};
 	filter.token = "{{token}}";
-	amp.loadLog(filter,"{{sessionid}}");
+	amp.loadLog(filter,"{{sessionid}}","{{csrfToken}}");
 
 
 	$('.loglevel').on('click', function(){
@@ -45,7 +45,7 @@ $(document).ready(function() {
 		} else {
 			filter.loglevel = $(this).attr('loglevel');
 		}
-		amp.loadLog(filter,"{{sessionid}}");
+		amp.loadLog(filter,"{{sessionid}}","{{csrfToken}}");
 	});
 });
 
